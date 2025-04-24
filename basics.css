@@ -1,3 +1,15 @@
 #header {
   background-color: blue;
+}
+
+#hnav {
+  background-color: grey;
+}
+#hnav li {
+  display: inline;
+}
+#hnav a {
+  display: block;
+  padding: 8px;
+  background-color: white;
 }/*# sourceMappingURL=basics.css.map */
