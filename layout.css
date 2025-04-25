@@ -1,5 +1,5 @@
 .header{
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
@@ -9,7 +9,7 @@
     display: grid;
 
     grid-template-areas: 
-    'aside aside main main main'
+    'aside main main main main'
     ;
 }
 

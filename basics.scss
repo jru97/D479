@@ -4,6 +4,7 @@ $teal: #086375;
 $green: #81ae9d;
 $taupe: #86615c;
 $dark: #2c1320;
+$yellow: #ffdb9a;
 
 @media screen and (max-width: 800px){}
 
@@ -11,7 +12,6 @@ $dark: #2c1320;
     #header{
         text-align: center;
         display: grid;
-        width: 100%;
 
         #title{ grid-area: title; }
         #hnav{ grid-area: hnav; }
@@ -32,7 +32,7 @@ $dark: #2c1320;
         ul{
             list-style-type: none;
             margin: 0;
-            padding: 0;
+            padding: 0.5em;
             overflow: hidden;
             background-color: $teal;
         }
@@ -48,7 +48,7 @@ $dark: #2c1320;
             }
 
             a:hover{
-                background-color: $green;
+                background-color: $yellow;
                 color: $dark;
             }
         }

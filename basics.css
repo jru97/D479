@@ -3,7 +3,6 @@
   #header {
     text-align: center;
     display: grid;
-    width: 100%;
     grid-template-areas: "title title title title" "hnav hnav hnav search";
   }
   #header #title {
@@ -23,7 +22,7 @@
   #hnav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
     overflow: hidden;
     background-color: #086375;
   }
@@ -38,7 +37,7 @@
     color: #f7c6b1;
   }
   #hnav li a:hover {
-    background-color: #81ae9d;
+    background-color: #ffdb9a;
     color: #2c1320;
   }
   footer {
