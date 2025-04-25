@@ -9,16 +9,10 @@ body{
     background-color: $coral;
 }
 
-.active{
+/* active tab */
+#home{
     background-color:$green;
     color: $dark;
-}
-
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 

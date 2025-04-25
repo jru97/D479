@@ -3,14 +3,8 @@ body {
   background-color: #f7c6b1;
 }
 
-.active {
+/* active tab */
+#home {
   background-color: #81ae9d;
   color: #2c1320;
-}
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }/*# sourceMappingURL=index.css.map */
