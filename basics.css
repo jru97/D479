@@ -3,6 +3,7 @@
   #header {
     text-align: center;
     display: grid;
+    width: 100%;
     grid-template-areas: "title title title title" "hnav hnav hnav search";
   }
   #header #title {
