@@ -6,4 +6,11 @@ body {
 .active {
   background-color: #81ae9d;
   color: #2c1320;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
