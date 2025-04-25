@@ -5,7 +5,18 @@ $green: #81ae9d;
 $taupe: #86615c;
 $dark: #2c1320;
 
-#header{}
+#header{
+    text-align: center;
+    display: grid;
+
+    #title{ grid-area: title; }
+    #hnav{ grid-area: hnav; }
+    #search{ grid-area: search; }
+
+    grid-template-areas: 
+    'title title title'
+    'hnav hnav search';
+}
 
 #hnav{
     background-color: $teal;

@@ -1,4 +1,19 @@
 /* Color Palette */
+#header {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "title title title" "hnav hnav search";
+}
+#header #title {
+  grid-area: title;
+}
+#header #hnav {
+  grid-area: hnav;
+}
+#header #search {
+  grid-area: search;
+}
+
 #hnav {
   background-color: #086375;
 }
