@@ -1,9 +1,14 @@
-#header{
-    background-color: blue;
-}
+/* Color Palette */
+$coral: #f7c6b1;
+$teal: #086375;
+$green: #81ae9d;
+$taupe: #86615c;
+$dark: #2c1320;
+
+#header{}
 
 #hnav{
-    background-color: grey;
+    background-color: $teal;
 
     li{
         display: inline;
@@ -12,6 +17,9 @@
     a{
         display: block;
         padding: 8px;
-        background-color: white;
     }
+}
+
+#sitemap{
+    font-weight: bold;
 }
