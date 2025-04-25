@@ -1,9 +1,6 @@
-#header {
-  background-color: blue;
-}
-
+/* Color Palette */
 #hnav {
-  background-color: grey;
+  background-color: #086375;
 }
 #hnav li {
   display: inline;
@@ -11,5 +8,9 @@
 #hnav a {
   display: block;
   padding: 8px;
-  background-color: white;
+}
+
+#sitemap {
+  text-align: center;
+  font-weight: bold;
 }/*# sourceMappingURL=basics.css.map */
