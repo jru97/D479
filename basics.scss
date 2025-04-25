@@ -14,20 +14,31 @@ $dark: #2c1320;
     #search{ grid-area: search; }
 
     grid-template-areas: 
-    'title title title'
-    'hnav hnav search';
+    'title title title title'
+    'hnav hnav hnav search';
 }
 
 #hnav{
-    background-color: $teal;
-
-    li{
-        display: inline;
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $teal;
     }
+    li{
+        float: left;
 
-    a{
-        display: block;
-        padding: 8px;
+        a{
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        a:hover{
+            background-color: $green;
+        }
     }
 }
 
