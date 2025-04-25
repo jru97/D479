@@ -1,25 +1,27 @@
-.header{
-    position: sticky;
-    left: 0;
-    top: 0;
-    width: 100%;
+/* Color Palette */
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
-.bodyblock{
-    display: grid;
-
-    grid-template-areas: 
-    'aside main main main main'
-    ;
+.bodyblock {
+  display: grid;
+  grid-template-areas: "aside main main main main";
 }
 
-.aside{ grid-area: aside; }
-
-.main{ grid-area: main; }
-
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+.aside {
+  grid-area: aside;
 }
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,33 @@
+/* Color Palette */
+$coral: #f7c6b1;
+$teal: #086375;
+$green: #81ae9d;
+$taupe: #86615c;
+$dark: #2c1320;
+$yellow: #ffdb9a;
+
+.header{
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.bodyblock{
+    display: grid;
+
+    grid-template-areas: 
+    'aside main main main main'
+    ;
+}
+
+.aside{ grid-area: aside; }
+
+.main{ grid-area: main; }
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
