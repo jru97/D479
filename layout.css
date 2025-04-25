@@ -11,7 +11,6 @@
     grid-template-areas: 
     'aside main main main main'
     ;
-    grid-auto-columns: max-content;
 }
 
 .aside{ grid-area: aside; }
