@@ -16,6 +16,8 @@
   }
   #title {
     font-weight: bold;
+    color: #086375;
+    font-size: 2em;
   }
   #hnav ul {
     list-style-type: none;
@@ -32,7 +34,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: white;
+    color: #f7c6b1;
   }
   #hnav li a:hover {
     background-color: #81ae9d;
@@ -42,6 +44,14 @@
     text-align: center;
     font-weight: bold;
     background-color: #086375;
+    color: #f7c6b1;
+    text-decoration: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  footer a {
     color: #f7c6b1;
   }
 }/*# sourceMappingURL=basics.css.map */

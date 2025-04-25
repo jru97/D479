@@ -23,6 +23,8 @@ $dark: #2c1320;
 
     #title{
         font-weight: bold;
+        color: $teal;
+        font-size: 2em;
     }
 
     #hnav{
@@ -41,7 +43,7 @@ $dark: #2c1320;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                color: white;
+                color: $coral;
             }
 
             a:hover{
@@ -56,5 +58,15 @@ $dark: #2c1320;
         font-weight: bold;
         background-color: $teal;
         color: $coral;
+        text-decoration: none;
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        a{
+            color: $coral;
+        }
     }
 }
