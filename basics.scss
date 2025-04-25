@@ -5,44 +5,94 @@ $green: #81ae9d;
 $taupe: #86615c;
 $dark: #2c1320;
 
-#header{
-    text-align: center;
-    display: grid;
+@media screen and (max-width: 800px){
+    #header{
+        text-align: center;
+        display: grid;
 
-    #title{ grid-area: title; }
-    #hnav{ grid-area: hnav; }
-    #search{ grid-area: search; }
+        #title{ grid-area: title; }
+        #hnav{ grid-area: hnav; }
+        #search{ grid-area: search; }
 
-    grid-template-areas: 
-    'title title title title'
-    'hnav hnav hnav search';
+        grid-template-areas: 
+        'title title title title'
+        'hnav hnav hnav search';
+    }
+
+    #hnav{
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: $teal;
+        }
+        li{
+            float: left;
+
+            a{
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover{
+                background-color: $green;
+                color: $dark;
+            }
+        }
+    }
+
+    #footer{
+        text-align: center;
+        font-weight: bold;
+    }
 }
 
-#hnav{
-    ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: $teal;
+@media screen and (min-width: 801px){
+    #header{
+        text-align: center;
+        display: grid;
+
+        #title{ grid-area: title; }
+        #hnav{ grid-area: hnav; }
+        #search{ grid-area: search; }
+
+        grid-template-areas: 
+        'title title title title'
+        'hnav hnav hnav search';
     }
-    li{
-        float: left;
 
-        a{
-            display: block;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+    #hnav{
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: $teal;
         }
+        li{
+            
 
-        a:hover{
-            background-color: $green;
+            a{
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover{
+                background-color: $green;
+                color: $dark;
+            }
         }
     }
-}
 
-#footer{
-    text-align: center;
-    font-weight: bold;
+    #footer{
+        text-align: center;
+        font-weight: bold;
+    }
 }
