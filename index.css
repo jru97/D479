@@ -3,7 +3,7 @@ body {
   background-color: #f7c6b1;
 }
 
-#home {
+.active {
   background-color: #81ae9d;
   color: #2c1320;
 }/*# sourceMappingURL=index.css.map */
