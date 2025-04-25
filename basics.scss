@@ -5,7 +5,9 @@ $green: #81ae9d;
 $taupe: #86615c;
 $dark: #2c1320;
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px){}
+
+@media screen /*and (min-width: 801px)*/{
     #header{
         text-align: center;
         display: grid;
@@ -17,6 +19,10 @@ $dark: #2c1320;
         grid-template-areas: 
         'title title title title'
         'hnav hnav hnav search';
+    }
+
+    #title{
+        font-weight: bold;
     }
 
     #hnav{
@@ -29,53 +35,7 @@ $dark: #2c1320;
         }
         li{
             float: left;
-
-            a{
-                display: block;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                color: white;
-            }
-
-            a:hover{
-                background-color: $green;
-                color: $dark;
-            }
-        }
-    }
-
-    #footer{
-        text-align: center;
-        font-weight: bold;
-    }
-}
-
-@media screen and (min-width: 801px){
-    #header{
-        text-align: center;
-        display: grid;
-
-        #title{ grid-area: title; }
-        #hnav{ grid-area: hnav; }
-        #search{ grid-area: search; }
-
-        grid-template-areas: 
-        'title title title title'
-        'hnav hnav hnav search';
-    }
-
-    #hnav{
-        ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: $teal;
-        }
-        li{
             
-
             a{
                 display: block;
                 text-align: center;

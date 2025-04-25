@@ -1,5 +1,5 @@
 /* Color Palette */
-@media screen and (max-width: 800px) {
+@media screen {
   #header {
     text-align: center;
     display: grid;
@@ -13,6 +13,9 @@
   }
   #header #search {
     grid-area: search;
+  }
+  #title {
+    font-weight: bold;
   }
   #hnav ul {
     list-style-type: none;
@@ -23,44 +26,6 @@
   }
   #hnav li {
     float: left;
-  }
-  #hnav li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-  }
-  #hnav li a:hover {
-    background-color: #81ae9d;
-    color: #2c1320;
-  }
-  #footer {
-    text-align: center;
-    font-weight: bold;
-  }
-}
-@media screen and (min-width: 801px) {
-  #header {
-    text-align: center;
-    display: grid;
-    grid-template-areas: "title title title title" "hnav hnav hnav search";
-  }
-  #header #title {
-    grid-area: title;
-  }
-  #header #hnav {
-    grid-area: hnav;
-  }
-  #header #search {
-    grid-area: search;
-  }
-  #hnav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #086375;
   }
   #hnav li a {
     display: block;
