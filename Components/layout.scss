@@ -1,0 +1,68 @@
+/* Color Palette */
+$coral: #f7c6b1;
+$teal: #086375;
+$green: #81ae9d;
+$taupe: #86615c;
+$dark: #2c1320;
+$yellow: #ffdb9a;
+
+body{
+    background-color: $coral;
+    margin: 0;
+}
+
+/* Header */
+.header{
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.sidebar{
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0.5em;
+        width: 100%;
+        background-color: $green;
+        position: fixed;
+        height: 100%;
+        overflow: auto;  
+    }
+
+    li{
+        a{
+            display: block;
+            color: $dark;
+            padding: 8px 16px;
+            text-decoration: none; 
+        }
+        a:hover{
+            background-color: $yellow;
+            color: $dark;
+        }
+    }
+}
+
+/* Body Block */
+.bodyblock{
+    display: grid;
+
+    grid-template-areas: 
+    'aside main main main main'
+    ;
+}
+
+.aside{ grid-area: aside; }
+
+.main{ grid-area: main; }
+
+/* Footer */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
