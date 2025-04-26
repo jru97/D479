@@ -1,5 +1,6 @@
 /* Color Palette */
 @media screen {
+  /* HEADER */
   #header {
     text-align: center;
     display: grid;
@@ -10,9 +11,6 @@
   }
   #header #hnav {
     grid-area: hnav;
-  }
-  #header #search {
-    grid-area: search;
   }
   #title {
     font-weight: bold;
@@ -40,6 +38,10 @@
     background-color: #ffdb9a;
     color: #2c1320;
   }
+  #search {
+    float: right;
+  }
+  /* FOOTER */
   footer {
     text-align: center;
     font-weight: bold;
