@@ -6,7 +6,7 @@ body {
 
 /* MOBILE */
 /* DESKTOP */
-@media screen {
+@media screen, print {
   /* Header */
   .header {
     position: sticky;
