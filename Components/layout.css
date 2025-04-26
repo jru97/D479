@@ -42,6 +42,8 @@ body {
   }
   .aside {
     width: 20%;
+    margin: 0;
+    padding: 0;
   }
   .main {
     background-color: #86615c;
