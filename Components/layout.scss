@@ -5,6 +5,8 @@ $green: #81ae9d;
 $taupe: #86615c;
 $dark: #2c1320;
 $yellow: #ffdb9a;
+$mobile: 800px;
+$desktop: 801px;
 
 body{
     background-color: $coral;
@@ -12,12 +14,12 @@ body{
 }
 
 /* MOBILE */
-@media screen and (max-width: 800px){
+@media all and (max-width: $mobile){
 
 }
 
 /* DESKTOP */
-@media screen,print{
+@media all /* and (min-width: $desktop) */{
     /* Header */
     .header{
         position: sticky;
@@ -55,11 +57,7 @@ body{
 
     /* Body Block */
     .bodyblock{
-        /* display: grid;
-
-        grid-template-areas: 
-        'aside main main main main'
-        ; */
+        background-color: $taupe;
     }
 
     .aside{ 
@@ -82,4 +80,3 @@ body{
         width: 100%;
     }
 }
-

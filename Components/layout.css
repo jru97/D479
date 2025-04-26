@@ -6,7 +6,7 @@ body {
 
 /* MOBILE */
 /* DESKTOP */
-@media screen, print {
+@media all {
   /* Header */
   .header {
     position: sticky;
@@ -37,11 +37,7 @@ body {
   }
   /* Body Block */
   .bodyblock {
-    /* display: grid;
-
-    grid-template-areas: 
-    'aside main main main main'
-    ; */
+    background-color: #86615c;
   }
   .aside {
     width: 20%;
