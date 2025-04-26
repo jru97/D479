@@ -42,10 +42,12 @@ body {
 
 .aside {
   grid-area: aside;
+  width: 20%;
 }
 
 .main {
   grid-area: main;
+  left: 20%;
 }
 
 /* Footer */
