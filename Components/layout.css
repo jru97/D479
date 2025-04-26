@@ -36,6 +36,10 @@ body {
     color: #2c1320;
   }
   /* Body Block */
+  .bodyblock {
+    margin: 0;
+    padding: 0;
+  }
   .aside {
     width: 20%;
   }
