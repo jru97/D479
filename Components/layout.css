@@ -36,14 +36,12 @@ body {
     color: #2c1320;
   }
   /* Body Block */
-  .bodyblock {
-    background-color: #86615c;
-  }
   .aside {
     width: 20%;
   }
   .main {
-    margin-left: 20%;
+    background-color: #86615c;
+    margin: 1em 1em 1em 25%;
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 3%;

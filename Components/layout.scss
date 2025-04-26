@@ -57,7 +57,7 @@ body{
 
     /* Body Block */
     .bodyblock{
-        background-color: $taupe;
+        
     }
 
     .aside{ 
@@ -65,7 +65,8 @@ body{
     }
 
     .main{ 
-        margin-left: 20%;
+        background-color: $taupe;
+        margin: 1em 1em 1em 25%;
         padding-top: 3%;
         padding-left: 5%;
         padding-right: 3%;
