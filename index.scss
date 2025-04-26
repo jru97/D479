@@ -9,7 +9,10 @@ $yellow: #ffdb9a;
 /* active tab */
 #home{
     background-color:$green;
-    color: $dark;
+
+    a{
+      color: $dark;  
+    }
 }
 
 
