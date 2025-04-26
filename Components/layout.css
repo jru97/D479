@@ -36,8 +36,11 @@ body {
 
 /* Body Block */
 .bodyblock {
-  display: grid;
-  grid-template-areas: "aside main main main main";
+  /* display: grid;
+
+  grid-template-areas: 
+  'aside main main main main'
+  ; */
 }
 
 .aside {
