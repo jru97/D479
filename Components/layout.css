@@ -44,12 +44,10 @@ body {
 }
 
 .aside {
-  grid-area: aside;
   width: 20%;
 }
 
 .main {
-  grid-area: main;
   margin-left: 20%;
 }
 
