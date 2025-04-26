@@ -11,6 +11,12 @@ body{
     margin: 0;
 }
 
+/* MOBILE */
+@media screen and (max-width: 800px){
+
+}
+
+/* DESKTOP */
 @media screen{
     /* Header */
     .header{
@@ -61,7 +67,7 @@ body{
     }
 
     .main{ 
-        margin-left: 20%;
+        margin-left: 25%;
     }
 
     /* Footer */
@@ -72,3 +78,4 @@ body{
         width: 100%;
     }
 }
+

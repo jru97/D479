@@ -4,6 +4,8 @@ body {
   margin: 0;
 }
 
+/* MOBILE */
+/* DESKTOP */
 @media screen {
   /* Header */
   .header {
@@ -45,7 +47,7 @@ body {
     width: 20%;
   }
   .main {
-    margin-left: 20%;
+    margin-left: 25%;
   }
   /* Footer */
   .footer {
