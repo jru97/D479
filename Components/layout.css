@@ -48,7 +48,10 @@ body {
   }
   .main {
     margin-left: 20%;
-    padding: 5%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 3%;
+    padding-bottom: 3%;
   }
   /* Footer */
   .footer {
