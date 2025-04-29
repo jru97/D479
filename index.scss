@@ -13,23 +13,54 @@ $hidden: none;
 
 /* ----- MOBILE ----- */
 @media screen and (max-width: $mobile){
-    .asideimg{}
+    .asideimg{
+        display: block;
+    }
 
     #asideimg1{
+        margin: auto;
+
         width: 80%;
         height: auto;
     }
 
-    .bodyimg{}
+    .bodyimg{
+        display: block;
+    }
 
     #bodyimg1{
-        display: block;
         margin: auto;
-        
+
         width: 90%;
         height: auto;
     }
 }
 
 /* ----- DESKTOP ----- */
-@media screen and (min-width: $desktop){}
+@media screen and (min-width: $desktop){
+    .bodyblock{
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+        margin-top: -6.75em;
+        margin-left: 0;
+        padding: 0;
+
+        background-color: transparent;
+        background-image: url("./Components/plumeria.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+
+        text-align: center;
+    }
+    h1{
+        font-size: 10em;
+        color: white;
+        text-shadow: 5px 1px $accent4;
+        -webkit-text-stroke: 1px $accent4;
+    }
+
+    .aside{ display: $hidden; }
+    #space { display: $hidden; }
+}
