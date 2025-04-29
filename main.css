@@ -160,7 +160,7 @@ body {
     text-align: center;
     text-decoration: none;
   }
-  #nav a:hover, #nav a:focus {
+  #nav a:hover {
     background-color: #81AE9D;
     color: #2C1320;
   }
