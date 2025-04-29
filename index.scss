@@ -55,12 +55,13 @@ $hidden: none;
         text-align: center;
     }
     h1{
+        font-family: "Sarina", sans-serif;
         font-size: 10em;
         color: white;
+        font-weight: bolder;
         text-shadow: 5px 1px $accent4;
         -webkit-text-stroke: 1px $accent4;
     }
-
     .aside{ display: $hidden; }
     #space { display: $hidden; }
 }
