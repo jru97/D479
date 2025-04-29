@@ -196,7 +196,7 @@ body {
   }
   .body {
     box-sizing: border-box;
-    min-height: 89vh;
+    min-height: 80vh;
     margin-top: 0.2em;
     margin-left: 26%;
     margin-bottom: 0.2em;
