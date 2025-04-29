@@ -3,32 +3,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
+    <!-- Page Info -->
     <title>Taniti || Home</title>
     <link rel="icon" href="./Components/favicon.ico"/>
     <meta name="description" content="WGU D479 User Experience Design Task 1 by Jack Underwood (005733342)"/>
     <meta name="subject" content="WGU D479 Task 1"/>
 
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="./Components/layout.css"/>
-    <link rel="stylesheet" href="./Components/components.css"/>
-   
-    <script src="https://www.w3schools.com/lib/w3.js"></script> 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./main.css"/>
+    <!-- Icons --><script src="https://kit.fontawesome.com/5fc5f741e7.js" crossorigin="anonymous"></script>
+
+    <!-- Scripts -->
+    <!----><script src="library.js"></script>
+    <!-- Include --><script src="https://www.w3schools.com/lib/w3.js"></script> 
 </head>
 
 <body>
-    <div class="header" w3-include-html="./Components/header.html"></div>
-
-    <div class="bodyblock">
-        <div class="aside">
-            <div w3-include-html="./Components/sidebar.html"></div>
+    <!-- HEADER -->
+    <div class="header">
+        <button id="home-button"><a href="www.google.com"><i class="fa fa-house icon"></i></a></button>
+        <button id="nav-button" onclick="dropdown()">&#9776;</button>
+        <div id="title">Taniti</div>
+        
+        <div id="nav" class="nav-content">
+            <a id="home" class="active" href="./index.html">Home</a>
+            <a id="necessities" href="./necessities.html">Food & Lodging</a>
+            <a id="entertainment" href="./entertainment.html">Entertainment</a>
+            <a id="sightseeing" href="./sightseeing.html">Sightseeing</a>
+            <a id="transportation" href="./transportation.html">Transportation</a>
+            <a id="faq" href="./faq.html">FAQs</a>
+            <a id="projectinfo" href="./projectinfo.html">Project Info</a>
         </div>
-
-        <div class="main">
-            Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano. Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most the Tanitian economy was dominated by fishing or agriculture.
-        </div>
+        
+        <div class="subtitle">Home</div>
     </div>
 
-    <div class="footer" w3-include-html="./Components/footer.html"></div>
+    <!-- BODY BLOCK -->
+     <div class="bodyblock">
+     <div class="aside">thisisanaside</div>
 
-    <script>w3.includeHTML();</script>
+    <div id="space">.</div>
+     <div class="body">thisisthebodytext</div>
+     </div>
+    <!-- FOOTER -->
+    <footer>
+        <a id="sitemap" href="./sitemap.html">Site Map</a><br>
+        Developed by Jack Underwood (005733342) for WGU D479 User Experience Design
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script> 
+        function dropdown() {
+            var x = document.getElementById("nav");
+            if (x.className === "nav-content") {
+                x.className += "show";
+            } else {
+                x.className = "nav-content";
+            }
+        }
+    </script>
 </body>

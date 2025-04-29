@@ -42,6 +42,7 @@ body {
   }
   .aside {
     width: 20%;
+    margin-top: -1em;
     padding: 0;
   }
   .main {
