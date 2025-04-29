@@ -156,7 +156,7 @@ body{
 }
 
 /* ----- DESKTOP ----- */
-@media all and (min-width: $desktop){
+@media screen and (min-width: $desktop){
 /* ~~~~~ Header ~~~~~ */
   #title{
     text-align: center;
@@ -266,3 +266,114 @@ body{
     }
   }
 }
+
+@media print{
+  /* ~~~~~ Header ~~~~~ */
+    #title{
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: $secondary;
+      text-shadow: 1px 1px $accent4;
+  
+      background-color: $primary;
+    }
+  
+    /* Mobile Navigational Buttons */
+    #home-button{ display: $hidden; }
+    #nav-button{ display: $hidden; }
+  
+    /* Nav Bar */
+  
+    #nav{
+      background-color: $secondary;
+      padding: 2.1vw;
+  
+      a{
+        display: inline;
+        padding: 1.5vw;
+  
+        color: $primary;
+        text-align: center;
+        text-decoration: none;
+  
+        &:hover, &:focus{
+          background-color: $accent2;
+          color: $accent4;
+        }
+      }
+  
+      .active{
+        background-color: $accent1;
+        color: $accent4;
+      }
+    }
+  
+    /* Subtitle */
+    .subtitle{
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+        background-color: $secondary;
+  
+        text-align: center;
+        color: $primary;
+        font-weight: bold;
+        font-size: 1.5em;
+        text-shadow: 1px 1px $accent4;
+    }
+  
+  /* ~~~~~ BODY BLOCK ~~~~~ */
+    .bodyblock{
+      margin: 0.2em;
+    }
+    .aside{
+      box-sizing: border-box;
+      min-height: 91dvh;
+      width: 25%;
+      background-color: $accent2;
+      padding: 1%;
+      margin-top: -0.3em;
+      margin-left: -0.2em;
+      float: left;
+      overflow: hidden;
+  
+      text-wrap: balance;
+      word-wrap: break-word;
+      color: $accent4;
+    }
+  
+    #space{
+      color: $primary;
+      font-size: 0em;
+    }
+  
+    .body{
+      box-sizing: border-box;
+      min-height: 89vh;
+      margin-top: 0.2em;
+      margin-left: 26%;
+      margin-bottom: 0.2em;
+      padding: 1%;
+      background-color: $accent1;
+      
+      text-wrap: balance;
+      word-wrap: break-word;
+      color: $accent4;
+    }
+  /* ~~~~~ FOOTER ~~~~~ */
+    footer{
+      position: sticky;
+      left: 0;
+      bottom: 0;
+      background-color: $secondary;
+  
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      color: $primary;
+  
+      a{
+        color: $primary;
+      }
+    }
+  }

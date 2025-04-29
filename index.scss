@@ -11,4 +11,16 @@ $mobile: 800px;
 $desktop: 801px;
 $hidden: none;
 
-@media
+/* ----- MOBILE ----- */
+@media screen and (max-width: $mobile){
+    .asideimg{}
+
+    #asideimg1{}
+
+    .bodyimg{}
+
+    #bodyimg1{}
+}
+
+/* ----- DESKTOP ----- */
+@media screen and (min-width: $desktop){}
