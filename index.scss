@@ -23,7 +23,9 @@ $hidden: none;
     .bodyimg{}
 
     #bodyimg1{
-        text-align: center;
+        display: block;
+        margin: auto;
+        
         width: 90%;
         height: auto;
     }
