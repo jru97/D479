@@ -156,7 +156,7 @@ body{
 }
 
 /* ----- DESKTOP ----- */
-@media screen and (min-width: $desktop){
+@media all and (min-width: $desktop){
 /* ~~~~~ Header ~~~~~ */
   #title{
     text-align: center;
