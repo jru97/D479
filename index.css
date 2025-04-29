@@ -7,4 +7,15 @@
 /* dark brown: #2C1329 */
 /* Variables */
 /* ----- MOBILE ----- */
+@media screen and (max-width: 800px) {
+  #asideimg1 {
+    width: 80%;
+    height: auto;
+  }
+  #bodyimg1 {
+    text-align: center;
+    width: 90%;
+    height: auto;
+  }
+}
 /* ----- DESKTOP ----- *//*# sourceMappingURL=index.css.map */

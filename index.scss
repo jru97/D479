@@ -15,11 +15,18 @@ $hidden: none;
 @media screen and (max-width: $mobile){
     .asideimg{}
 
-    #asideimg1{}
+    #asideimg1{
+        width: 80%;
+        height: auto;
+    }
 
     .bodyimg{}
 
-    #bodyimg1{}
+    #bodyimg1{
+        text-align: center;
+        width: 90%;
+        height: auto;
+    }
 }
 
 /* ----- DESKTOP ----- */
