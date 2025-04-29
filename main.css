@@ -1,0 +1,230 @@
+/* Color Palette */
+/* coral: #FFC6C6 */
+/* teal: #086375 */
+/* yellow: #FFDB9A */
+/* green: #81AE9D */
+/* taupe: #86615C */
+/* dark brown: #2C1329 */
+/* Variables */
+/* ----- Universal ----- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFC6C6;
+}
+
+/* ----- MOBILE ----- */
+@media screen and (max-width: 800px) {
+  /* ~~~~~ Header ~~~~~ */
+  /* Title */
+  #title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #086375;
+    text-shadow: 1px 1px #2C1320;
+    background-color: #FFC6C6;
+  }
+  /* Mobile Navigational Buttons */
+  #home-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.2em;
+    border: none;
+    background: transparent;
+    font-size: 2em;
+  }
+  #home-button .fa-house {
+    color: #086375;
+  }
+  #home-button .fa-house:hover {
+    color: #2C1320;
+  }
+  #nav-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.15em;
+    border: none;
+    background: transparent;
+    font-size: 2em;
+    color: #086375;
+    font-weight: bold;
+  }
+  #nav-button:hover {
+    color: #2C1320;
+  }
+  /* Navigation Dropdown */
+  .nav-content {
+    display: none;
+  } /* hide navigation */
+  .show {
+    display: inline-block;
+  } /* shows navigation */
+  #nav {
+    margin-bottom: 0.5em;
+    background-color: #086375;
+    color: #FFC6C6;
+    font-size: 2em;
+    text-align: center;
+  }
+  #nav a {
+    display: block;
+    color: #FFC6C6;
+    text-decoration: none;
+    /* hides home link */
+  }
+  #nav a #home {
+    display: none;
+  }
+  #nav a:hover {
+    background-color: #86615C;
+  }
+  /* Subtitle */
+  .subtitle {
+    background-color: #086375;
+    color: #FFC6C6;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px #2C1320;
+  }
+  /* ~~~~~ BODY BLOCK ~~~~~ */
+  .aside {
+    box-sizing: border-box;
+    min-height: 90.125dvh;
+    width: 25%;
+    background-color: #81AE9D;
+    padding: 1%;
+    float: left;
+    overflow: hidden;
+    text-wrap: balance;
+    word-wrap: break-word;
+    color: #2C1320;
+  }
+  #space {
+    color: #FFC6C6;
+    font-size: 0em;
+  }
+  .body {
+    box-sizing: border-box;
+    min-height: 89vh;
+    margin-top: 0.2em;
+    margin-left: 26%;
+    margin-bottom: 0.2em;
+    padding: 1%;
+    background-color: #FFDB9A;
+    text-wrap: balance;
+    word-wrap: break-word;
+    color: #2C1320;
+  }
+  /* ~~~~~ FOOTER ~~~~~ */
+  footer {
+    background-color: #086375;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFC6C6;
+  }
+  footer a {
+    color: #FFC6C6;
+  }
+}
+/* ----- DESKTOP ----- */
+@media screen and (min-width: 801px) {
+  /* ~~~~~ Header ~~~~~ */
+  #title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #086375;
+    text-shadow: 1px 1px #2C1320;
+    background-color: #FFC6C6;
+  }
+  /* Mobile Navigational Buttons */
+  #home-button {
+    display: none;
+  }
+  #nav-button {
+    display: none;
+  }
+  /* Nav Bar */
+  #nav {
+    background-color: #086375;
+    padding: 2.1vw;
+  }
+  #nav a {
+    display: inline;
+    padding: 1.5vw;
+    color: #FFC6C6;
+    text-align: center;
+    text-decoration: none;
+  }
+  #nav a:hover, #nav a:focus {
+    background-color: #81AE9D;
+    color: #2C1320;
+  }
+  #nav .active {
+    background-color: #FFDB9A;
+    color: #2C1320;
+  }
+  /* Subtitle */
+  .subtitle {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    background-color: #086375;
+    text-align: center;
+    color: #FFC6C6;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #2C1320;
+  }
+  /* ~~~~~ BODY BLOCK ~~~~~ */
+  .bodyblock {
+    margin: 0.2em;
+  }
+  .aside {
+    box-sizing: border-box;
+    min-height: 91dvh;
+    width: 25%;
+    background-color: #81AE9D;
+    padding: 1%;
+    margin-top: -0.3em;
+    margin-left: -0.2em;
+    float: left;
+    overflow: hidden;
+    text-wrap: balance;
+    word-wrap: break-word;
+    color: #2C1320;
+  }
+  #space {
+    color: #FFC6C6;
+    font-size: 0em;
+  }
+  .body {
+    box-sizing: border-box;
+    min-height: 89vh;
+    margin-top: 0.2em;
+    margin-left: 26%;
+    margin-bottom: 0.2em;
+    padding: 1%;
+    background-color: #FFDB9A;
+    text-wrap: balance;
+    word-wrap: break-word;
+    color: #2C1320;
+  }
+  /* ~~~~~ FOOTER ~~~~~ */
+  footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    background-color: #086375;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFC6C6;
+  }
+  footer a {
+    color: #FFC6C6;
+  }
+}/*# sourceMappingURL=main.css.map */
