@@ -1,23 +1,31 @@
 /* Color Palette */
-/* coral: #FFC6C6 */
+/* pink: #FFC6C6 */
 /* teal: #086375 */
 /* yellow: #FFDB9A */
 /* green: #81AE9D */
 /* taupe: #86615C */
 /* dark brown: #2C1329 */
 /* Variables */
-/* ----- Universal ----- */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #FFC6C6;
-}
-
-/* ----- MOBILE ----- */
+/* Max width for mobile: 800px */
+/* Min width for desktop: 801px */
+/* Hidden items: none */
+/* ~~~~~ Mobile ~~~~~ */
 @media screen and (max-width: 800px) {
-  /* ~~~~~ Header ~~~~~ */
+  /* ----- Header ----- */
+  .header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   /* Title */
   #title {
+    position: sticky;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    margin-right: -0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    font-family: "Sarina", sans-serif;
     text-align: center;
     font-size: 2.5em;
     font-weight: bold;
@@ -34,6 +42,7 @@ body {
     border: none;
     background: transparent;
     font-size: 2em;
+    z-index: 10;
   }
   #home-button .fa-house {
     color: #086375;
@@ -51,6 +60,7 @@ body {
     font-size: 2em;
     color: #086375;
     font-weight: bold;
+    z-index: 10;
   }
   #nav-button:hover {
     color: #2C1320;
@@ -62,44 +72,69 @@ body {
   .show {
     display: inline-block;
   } /* shows navigation */
+  #navtitle {
+    display: none;
+  }
   #nav {
+    box-sizing: border-box;
+    margin-left: -0.5em;
+    margin-right: -0.25em;
     margin-bottom: 0.5em;
+    position: sticky;
     background-color: #086375;
-    color: #FFC6C6;
     font-size: 2em;
+    font-family: "Chewy", sans-serif;
     text-align: center;
+    /* hides home link */
+    /* Hides current page */
+  }
+  #nav #home {
+    display: none;
+  }
+  #nav .active {
+    display: none;
   }
   #nav a {
     display: block;
-    color: #FFC6C6;
+    color: #FFDB9A;
     text-decoration: none;
-    /* hides home link */
-  }
-  #nav a #home {
-    display: none;
   }
   #nav a:hover {
-    background-color: #86615C;
+    background-color: #FFDB9A;
+    color: #2C1320;
   }
   /* Subtitle */
   .subtitle {
     background-color: #086375;
+    box-sizing: border-box;
+    margin-left: -0.5em;
+    margin-right: -0.25em;
     color: #FFC6C6;
+    font-family: "Chewy", sans-serif;
     text-align: center;
     font-size: 2em;
     text-shadow: 1px 1px #2C1320;
   }
-  /* ~~~~~ BODY BLOCK ~~~~~ */
+  /* ----- BODY BLOCK ----- */
+  body {
+    background-image: url(https://media.istockphoto.com/id/177373992/photo/frangipani-plumeria-flower.jpg?s=612x612&w=0&k=20&c=iafVwjMlMR_pQUE41zbFwpuGJTF36uG4jdry4epG2T4=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .bodyblock {
+    box-sizing: border-box;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+  }
   .aside {
     box-sizing: border-box;
-    min-height: 90.125dvh;
-    width: 25%;
     background-color: #81AE9D;
     padding: 1%;
-    float: left;
     overflow: hidden;
     text-wrap: balance;
     word-wrap: break-word;
+    text-align: center;
     color: #2C1320;
   }
   #space {
@@ -108,61 +143,92 @@ body {
   }
   .body {
     box-sizing: border-box;
-    min-height: 89vh;
-    margin-top: 0.2em;
-    margin-left: 26%;
-    margin-bottom: 0.2em;
-    padding: 1%;
+    min-height: 75vh;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 1em;
     background-color: #FFDB9A;
+    opacity: 80%;
     text-wrap: balance;
     word-wrap: break-word;
     color: #2C1320;
   }
-  /* ~~~~~ FOOTER ~~~~~ */
+  /* ----- FOOTER ----- */
   footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 102vw;
+    margin-left: -0.5em;
     background-color: #086375;
+    font-family: "Chewy", sans-serif;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
     color: #FFC6C6;
+    z-index: 10;
   }
   footer a {
     color: #FFC6C6;
   }
 }
-/* ----- DESKTOP ----- */
-@media screen and (min-width: 801px) {
-  /* ~~~~~ Header ~~~~~ */
-  .header {
-    position: sticky;
-    top: 0;
-    left: 0;
-  }
-  #title {
-    display: none;
-  }
-  /* Mobile Navigational Buttons */
+/* ~~~~~ Desktop & Print ~~~~~ */
+@media all and (min-width: 801px) {
+  /* ----- HEADER ----- */
+  /* Mobile Navigational Buttons & Title */
   #home-button {
     display: none;
   }
   #nav-button {
     display: none;
   }
-  /* Nav Bar */
+  #title {
+    display: none;
+  }
+  .header {
+    box-sizing: border-box;
+    display: flex;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    padding: 0;
+    z-index: 10;
+  }
+  /* Navigation */
   #nav {
     background-color: #086375;
-    padding: 2.1vw;
+    padding: 1.5vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   #nav a {
     display: inline;
-    padding: 1.5vw;
-    color: #FFC6C6;
+    padding: 1.25vw;
+    font-family: "Chewy", sans-serif;
+    color: #FFDB9A;
     text-align: center;
     text-decoration: none;
   }
   #nav a:hover {
     background-color: #81AE9D;
     color: #2C1320;
+  }
+  #nav #navtitle { /* Styling navigation title */
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    vertical-align: middle;
+    font-family: "Sarina", sans-serif;
+    font-size: 2em;
+    color: #FFC6C6;
+    text-align: center;
+    text-decoration: none;
   }
   #nav .active {
     background-color: #FFDB9A;
@@ -172,50 +238,54 @@ body {
   .subtitle {
     display: none;
   }
-  /* ~~~~~ BODY BLOCK ~~~~~ */
+  /* ----- BODY BLOCK ----- */
+  body {
+    background-image: url(https://media.istockphoto.com/id/177373992/photo/frangipani-plumeria-flower.jpg?s=612x612&w=0&k=20&c=iafVwjMlMR_pQUE41zbFwpuGJTF36uG4jdry4epG2T4=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
   .bodyblock {
-    margin: 0.2em;
+    margin: 0;
+    padding: 0;
   }
   .aside {
     box-sizing: border-box;
-    min-height: 91dvh;
-    width: 25%;
-    background-color: #81AE9D;
-    padding: 1%;
-    margin-top: -0.2em;
-    margin-left: -0.2em;
+    display: block;
+    width: 23%;
+    min-height: 90dvh;
+    margin-left: -0.5em;
     float: left;
-    overflow: hidden;
-    text-wrap: balance;
-    word-wrap: break-word;
-    color: #2C1320;
+    background-color: #81AE9D;
+    padding: 0.5em;
   }
   #space {
-    color: #FFC6C6;
-    font-size: 0em;
+    color: transparent;
   }
   .body {
     box-sizing: border-box;
-    min-height: 80vh;
-    margin-top: 0.2em;
-    margin-left: 26%;
-    margin-bottom: 0.2em;
-    padding: 1%;
+    margin-left: 25%;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    padding: 1em;
+    min-height: 76vh;
     background-color: #FFDB9A;
-    text-wrap: balance;
-    word-wrap: break-word;
-    color: #2C1320;
+    opacity: 0.8;
   }
-  /* ~~~~~ FOOTER ~~~~~ */
+  /* ----- FOOTER ----- */
   footer {
-    position: sticky;
+    position: fixed;
     left: 0;
     bottom: 0;
+    width: 102vw;
+    margin-left: -0.5em;
     background-color: #086375;
+    font-family: "Chewy", sans-serif;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
     color: #FFC6C6;
+    z-index: 10;
   }
   footer a {
     color: #FFC6C6;
