@@ -17,6 +17,17 @@
   .space {
     display: none;
   }
+  h1 {
+    font-family: "Sarina", sans-serif;
+    font-size: 7em;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 5px 1px #2C1320;
+    -webkit-text-stroke: 1px #2C1320;
+  }
+  .subtitle {
+    display: none;
+  }
 }
 /* ----- DESKTOP ----- */
 @media screen and (min-width: 801px) {
