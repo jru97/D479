@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="/basics.css"/>
-
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- Page Info -->
+    <title>Taniti || Home</title>
+    <link rel="icon" href="./Components/favicon.ico"/>
+    <meta name="description" content="WGU D479 User Experience Design Task 1 by Jack Underwood (005733342)"/>
+    <meta name="subject" content="WGU D479 Task 1"/>
+
+    <!-- Google Connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./main.css"/>
+    <!-- Index Page --><link rel="stylesheet" href="./index.css"/>
+    <!-- Icons --><script src="https://kit.fontawesome.com/5fc5f741e7.js" crossorigin="anonymous"></script>
+    <!-- Title Font --><link href="https://fonts.googleapis.com/css2?family=Festive&family=Sarina&display=swap" rel="stylesheet">
+    <!-- Nav Font --><link href="https://fonts.googleapis.com/css2?family=Chewy&family=Festive&family=Sarina&display=swap" rel="stylesheet">
+     
+    <!-- Scripts -->
 </head>
 
 <body>
-    <div id="404">
-       404 error 
+    <!-- HEADER -->
+    <div class="header">
+        <button id="home-button"><a href="www.google.com"><i class="fa fa-house icon"></i></a></button>
+        <button id="nav-button" onclick="dropdown()">&#9776;</button>
+        <div id="title">Taniti</div>
+        
+        <div id="nav" class="nav-content">
+            <a id="home" class="active" href="./index.html">Home</a>
+            <a id="necessities" href="./necessities.html">Food & Lodging</a>
+            <a id="entertainment" href="./entertainment.html">Entertainment</a>
+            <a id="sightseeing" href="./sightseeing.html">Sightseeing</a>
+            <a id="transportation" href="./transportation.html">Transportation</a>
+            <a id="faq" href="./faq.html">FAQs</a>
+            <a id="projectinfo" href="./projectinfo.html">Project Info</a>
+        </div>
+        
+        <div class="subtitle">Home</div>
     </div>
+
+    <!-- BODY BLOCK -->
+    <div class="bodyblock">
+    <div class="aside"></div>
+
+    <div id="space">.</div>
+        <div class="body">
+            <h1>404 Error</h1>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <a id="sitemap" href="./sitemap.html">Site Map</a><br>
+        Developed by Jack Underwood (005733342) for WGU D479 User Experience Design
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script> 
+        function dropdown() {
+            var x = document.getElementById("nav");
+            if (x.className === "nav-content") {
+                x.className += "show";
+            } else {
+                x.className = "nav-content";
+            }
+        }
+    </script>
 </body>
