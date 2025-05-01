@@ -26,6 +26,8 @@
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    opacity: 100%;
+    background-color: transparent;
     text-align: center;
   }
   h1 {
