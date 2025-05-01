@@ -2,6 +2,7 @@
 $primary: #FFC6C6; /* pink: #FFC6C6 */
 $secondary: #086375; /* teal: #086375 */
 $accent1: #FFDB9A; /* yellow: #FFDB9A */
+$accent1transparent: #ffdc9a8f; /* yellow transparent: #FFDC9A8F */
 $accent2: #81AE9D; /* green: #81AE9D */
 $accent3: #86615C; /* taupe: #86615C */
 $accent4: #2C1320; /* dark brown: #2C1329 */
@@ -11,6 +12,9 @@ $mobile: 800px; /* Max width for mobile: 800px */
 $desktop: 801px; /* Min width for desktop: 801px */
 $hidden: none; /* Hidden items: none */
 
+html{
+    font-family: "Chewy", sans-serif;
+}
 /* ~~~~~ Mobile ~~~~~ */
 @media screen and (max-width: $mobile){
 /* ----- Header ----- */
@@ -141,7 +145,7 @@ $hidden: none; /* Hidden items: none */
     }
     .aside{
         box-sizing: border-box;
-        background-color: $accent2;
+        background-color: $secondary;
         padding: 1%;
         overflow: hidden;
 
@@ -149,6 +153,25 @@ $hidden: none; /* Hidden items: none */
         word-wrap: break-word;
         text-align: center;
         color: $accent4;
+
+        font-family: "Chewy", sans-serif;
+
+        a{
+            display: block;
+            padding: 14px 16px;
+            margin: 0.25em;
+            color: $secondary;
+            background-color: $accent1;
+
+            &:hover{
+                background-color: $primary;
+                color: $accent4;
+            }
+        }
+        .active{
+            background-color: $primary;
+            color: $accent4;
+        }
     }
     #space{
         color: $primary;
@@ -162,8 +185,7 @@ $hidden: none; /* Hidden items: none */
         margin-right: 0.5em;
         margin-bottom: 0.5em;
         padding: 1em;
-        background-color: $accent1;
-        opacity: 80%;
+        background-color: $accent1transparent;
         
         text-wrap: balance;
         word-wrap: break-word;
@@ -212,7 +234,10 @@ $hidden: none; /* Hidden items: none */
     /* Navigation */
     #nav{
         background-color: $secondary;
-        padding: 1.5vw;
+        padding-top: 1vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-bottom: 1vw;
         position: sticky;
         top: 0;
         left: 0;
@@ -273,25 +298,37 @@ $hidden: none; /* Hidden items: none */
     .aside{
         box-sizing: border-box;
         display: block;
-        width: 23%;
+        width: 15%;
         min-height: 90dvh;
         margin-left: -0.5em;
         float: left;
-        background-color: $accent2;
+        background-color: $primary;
         padding: 0.5em;
+
+        font-family: "Chewy", sans-serif;
+
+        a{
+            display: block;
+            padding: 14px 16px;
+            color: $accent4;
+
+            &:hover{
+                background-color: $accent1;
+                color: $accent4;
+            }
+        }
     }
 
     #space{ color: transparent; }
     .body{
         box-sizing: border-box;
-        margin-left: 25%;
+        margin-left: 17%;
         margin-right: 1.5%;
         margin-bottom: 1.5%;
         padding: 1em;
         min-height: 76vh;
 
-        background-color: $accent1;
-        opacity: 0.8;
+        background-color: $accent1transparent;
     }
 
 /* ----- FOOTER ----- */
