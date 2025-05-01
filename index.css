@@ -6,6 +6,9 @@
 /* taupe: #86615C */
 /* dark brown: #2C1329 */
 /* Variables */
+/* Max width for mobile: 800px */
+/* Min width for desktop: 801px */
+/* Hidden items: none */
 /* ----- MOBILE ----- */
 @media screen and (max-width: 800px) {
   .aside {

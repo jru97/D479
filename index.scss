@@ -7,9 +7,9 @@ $accent3: #86615C; /* taupe: #86615C */
 $accent4: #2C1320; /* dark brown: #2C1329 */
 
 /* Variables */
-$mobile: 800px;
-$desktop: 801px;
-$hidden: none;
+$mobile: 800px; /* Max width for mobile: 800px */
+$desktop: 801px; /* Min width for desktop: 801px */
+$hidden: none; /* Hidden items: none */
 
 /* ----- MOBILE ----- */
 @media screen and (max-width: $mobile){
