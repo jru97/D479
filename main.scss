@@ -215,12 +215,12 @@ html{
             color: $primary;
             text-align: center;
         }
+
         input{
             display: none;
         }
-        input[type=checkbox]{
-            display: none;
-    
+
+        input/*[type=checkbox]*/{
             & ~ div{
                 display: $hidden;
             }

@@ -196,13 +196,10 @@ html {
   .subpage input {
     display: none;
   }
-  .subpage input[type=checkbox] {
+  .subpage input ~ div {
     display: none;
   }
-  .subpage input[type=checkbox] ~ div {
-    display: none;
-  }
-  .subpage input[type=checkbox]:checked ~ div {
+  .subpage input:checked ~ div {
     display: block;
   }
   /* ----- FOOTER ----- */
