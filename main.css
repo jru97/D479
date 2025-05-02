@@ -193,6 +193,9 @@ html {
     color: #FFC6C6;
     text-align: center;
   }
+  .subpage input {
+    display: none;
+  }
   .subpage input[type=checkbox] {
     display: none;
   }
