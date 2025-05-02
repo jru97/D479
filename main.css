@@ -135,17 +135,25 @@ html {
   .aside {
     box-sizing: border-box;
     background-color: #086375;
-    padding: 1%;
+    padding: 0.25em;
     overflow: hidden;
+  }
+  .aside button {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     text-wrap: balance;
     word-wrap: break-word;
     text-align: center;
     color: #2C1320;
     font-family: "Chewy", sans-serif;
+    font-size: 1.25em;
   }
   .aside a {
     display: block;
-    padding: 14px 16px;
+    padding: 0.25em;
     margin: 0.25em;
     color: #086375;
     background-color: #FFDB9A;
@@ -169,11 +177,30 @@ html {
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
-    padding: 1em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0em;
+    padding-bottom: 0.5em;
     background-color: rgba(255, 220, 154, 0.5607843137);
     text-wrap: balance;
     word-wrap: break-word;
     color: #2C1320;
+  }
+  .subpage label {
+    display: block;
+    box-sizing: border-box;
+    background: #086375;
+    color: #FFC6C6;
+    text-align: center;
+  }
+  .subpage input[type=checkbox] {
+    display: none;
+  }
+  .subpage input[type=checkbox] ~ div {
+    display: none;
+  }
+  .subpage input[type=checkbox]:checked ~ div {
+    display: block;
   }
   /* ----- FOOTER ----- */
   footer {

@@ -15,6 +15,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./main.css"/>
+    <link rel="stylesheet" href="./Food & Lodging/necessities.css"/>
     <!-- Icons --><script src="https://kit.fontawesome.com/5fc5f741e7.js" crossorigin="anonymous"></script>
     <!-- Title Font --><link href="https://fonts.googleapis.com/css2?family=Festive&family=Sarina&display=swap" rel="stylesheet">
     <!-- Nav Font --><link href="https://fonts.googleapis.com/css2?family=Chewy&family=Festive&family=Sarina&display=swap" rel="stylesheet">
@@ -46,18 +47,56 @@
     <!-- BODY BLOCK -->
      <div class="bodyblock">
         <div class="aside">
-            <a href="./Food & Lodging/groceries.html">Groceries</a>
-            <a href="./Food & Lodging/restaurants.html">Restaurants</a>
-            <a href="./Food & Lodging/lodging.html">Lodging</a>
-            <a href="./Food & Lodging/resort.html">Resort</a>
+            <button onclick="groceriesOpen()"><a href="#groceries">Groceries</a></button>
+            <button onclick="restaurantsOpen()"><a href="#restaurants">Restaurants</a></button>
+            <button onclick="lodgingOpen()"><a href="#lodging">Lodging</a></button>
+            <button onclick="resortOpen()"><a href="#resort">Resort</a></button>
         </div>
 
         <div id="space">.</div>
         <div class="body">
             <div class="bodytext">
                 Taniti has a variety of restaurants, grocery stores, hotels, and even a 4 star resort.
+                Click the dropdowns below for more information. 
+                <br><br>
+
+                <div id="groceries" class="subpage">
+                    <label for="groceries-checkbox">Groceries</label>
+                    <input type="checkbox" id="groceries-checkbox">
+                    <div id="groceries-text">
+                        Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day. 
+                    </div>
+                </div>
+
+                <br>
+
+                <div id="restaurants" class="subpage">
+                    <label for="restaurants-checkbox">Restaurants</label>
+                    <input type="checkbox" id="restaurants-checkbox">
+                    <div id="restaurants-text">
+                        Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.
+                    </div>
+                </div>
+
+                <br>
+
+                <div id="lodging" class="subpage">
+                    <label for="lodging-checkbox">Lodging</label>
+                    <input type="checkbox" id="lodging-checkbox">
+                    <div id="lodging-text">
+                        Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.
+                    </div>
+                </div>
+                
+                <br>
+                
+                <div id="resort" class="subpage">
+                    <label for="resort-checkbox">Resort</label>
+                    <input type="checkbox" id="resort-checkbox">
+                    <div id="resort-text">Taniti's large, 4 star resort has everything you could need. All types of lodging are strictly regulated and regularly inspected by the Tanitian government. </div>
+                </div>
+                    
             </div>
-            <img src="./Components/placeholder square.svg">
         <div id="space">.</div>
      </div>
     <!-- FOOTER -->
@@ -76,5 +115,54 @@
                 x.className = "nav-content";
             }
         }
+
+        function groceriesOpen() {
+            var groceries = document.getElementById("groceries-checkbox");
+            var restaurants = document.getElementById("restaurants-checkbox");
+            var lodging = document.getElementById("lodging-checkbox");
+            var resort = document.getElementById("resort-checkbox");
+
+            groceries.checked = true;
+            restaurants.checked = false;
+            lodging.checked = false;
+            resort.checked = false;
+        }
+
+        function restaurantsOpen() {
+            var groceries = document.getElementById("groceries-checkbox");
+            var restaurants = document.getElementById("restaurants-checkbox");
+            var lodging = document.getElementById("lodging-checkbox");
+            var resort = document.getElementById("resort-checkbox");
+
+            groceries.checked = false;
+            restaurants.checked = true;
+            lodging.checked = false;
+            resort.checked = false;
+        }
+
+        function lodgingOpen() {
+            var groceries = document.getElementById("groceries-checkbox");
+            var restaurants = document.getElementById("restaurants-checkbox");
+            var lodging = document.getElementById("lodging-checkbox");
+            var resort = document.getElementById("resort-checkbox");
+
+            groceries.checked = false;
+            restaurants.checked = false;
+            lodging.checked = true;
+            resort.checked = false;
+        }
+
+        function resortOpen() {
+            var groceries = document.getElementById("groceries-checkbox");
+            var restaurants = document.getElementById("restaurants-checkbox");
+            var lodging = document.getElementById("lodging-checkbox");
+            var resort = document.getElementById("resort-checkbox");
+
+            groceries.checked = false;
+            restaurants.checked = false;
+            lodging.checked = false;
+            resort.checked = true;
+        }
+
     </script>
 </body>
