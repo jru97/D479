@@ -17,13 +17,8 @@
   .space {
     display: none;
   }
-  h1 {
-    font-family: "Sarina", sans-serif;
-    font-size: 16vw;
-    color: white;
-    font-weight: bolder;
-    text-shadow: 5px 1px #2C1320;
-    -webkit-text-stroke: 1px #2C1320;
+  .body {
+    background-color: transparent;
     text-align: center;
   }
   .subtitle {
@@ -44,14 +39,6 @@
     opacity: 100%;
     background-color: transparent;
     text-align: center;
-  }
-  h1 {
-    font-family: "Sarina", sans-serif;
-    font-size: 10em;
-    color: white;
-    font-weight: bolder;
-    text-shadow: 5px 1px #2C1320;
-    -webkit-text-stroke: 1px #2C1320;
   }
   .aside {
     display: none;

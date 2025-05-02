@@ -2,7 +2,7 @@
 /* pink: #FFC6C6 */
 /* teal: #086375 */
 /* yellow: #FFDB9A */
-/* yellow transparent: #FFDC9A8F */
+/* yellow transparent: #FFDC9AB4 */
 /* green: #81AE9D */
 /* taupe: #86615C */
 /* dark brown: #2C1329 */
@@ -12,6 +12,35 @@
 /* Hidden items: none */
 html {
   font-family: "Chewy", sans-serif;
+}
+
+h1 {
+  font-family: "Sarina", sans-serif;
+  font-size: 12vmax;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 5px 1px #2C1320;
+  -webkit-text-stroke: 1px #2C1320;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: #FFDB9A;
+  text-decoration: underline;
+  text-shadow: 1px 1px #2C1320;
+  -webkit-text-stroke: 1px #2C1320;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  display: inline-table;
+}
+table th {
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px #86615C;
+  font-size: 1.25em;
 }
 
 /* ~~~~~ Mobile ~~~~~ */
@@ -133,6 +162,7 @@ html {
     margin-right: -0.5em;
   }
   .aside {
+    display: none;
     box-sizing: border-box;
     background-color: #086375;
     padding: 0.25em;
@@ -181,7 +211,7 @@ html {
     padding-left: 0.5em;
     padding-right: 0em;
     padding-bottom: 0.5em;
-    background-color: rgba(255, 220, 154, 0.5607843137);
+    background-color: rgba(255, 220, 154, 0.7058823529);
     text-wrap: balance;
     word-wrap: break-word;
     color: #2C1320;
@@ -301,9 +331,9 @@ html {
   }
   .aside {
     box-sizing: border-box;
-    display: block;
+    display: none;
     width: 15%;
-    min-height: 90dvh;
+    min-height: 200vh;
     margin-left: -0.5em;
     float: left;
     background-color: #FFC6C6;
@@ -319,17 +349,50 @@ html {
     background-color: #FFDB9A;
     color: #2C1320;
   }
+  .aside button {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-wrap: balance;
+    word-wrap: break-word;
+    text-align: center;
+    color: #2C1320;
+    font-family: "Chewy", sans-serif;
+    font-size: 1.25em;
+  }
   #space {
     color: transparent;
   }
   .body {
     box-sizing: border-box;
-    margin-left: 17%;
+    margin-left: 1.5%;
     margin-right: 1.5%;
     margin-bottom: 1.5%;
     padding: 1em;
     min-height: 76vh;
-    background-color: rgba(255, 220, 154, 0.5607843137);
+    background-color: rgba(255, 220, 154, 0.7058823529);
+  }
+  .subpage label {
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    background: #2C1320;
+    color: #FFDB9A;
+    text-align: center;
+  }
+  .subpage input {
+    display: none;
+  }
+  .subpage input ~ div {
+    display: none;
+  }
+  .subpage input:checked ~ div {
+    display: block;
+  }
+  .subpage div table {
+    margin-left: -4em;
   }
   /* ----- FOOTER ----- */
   footer {
