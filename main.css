@@ -1,4 +1,4 @@
-/* Color Palette */
+/* COLOR PALETTE -------------------- */
 /* pink: #FFC6C6 */
 /* teal: #086375 */
 /* yellow: #FFDB9A */
@@ -6,15 +6,20 @@
 /* green: #81AE9D */
 /* taupe: #86615C */
 /* dark brown: #2C1329 */
-/* Variables */
+/* VARIABLES -------------------- */
 /* Max width for mobile: 800px */
 /* Min width for desktop: 801px */
 /* Hidden items: none */
-html {
+/* UNIVERSAL -------------------- */
+* {
   font-family: "Chewy", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
+/* TEXT -------------------- */
+h1 { /* Site Title */
   font-family: "Sarina", sans-serif;
   font-size: 12vmax;
   color: white;
@@ -24,7 +29,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h2 { /* Subheaders */
   text-align: center;
   color: #FFDB9A;
   text-decoration: underline;
@@ -35,7 +40,6 @@ h2 {
 table {
   width: 100%;
   text-align: center;
-  display: inline-table;
 }
 table th {
   text-decoration: underline;
@@ -45,19 +49,11 @@ table th {
 
 /* ~~~~~ Mobile ~~~~~ */
 @media screen and (max-width: 800px) {
-  /* ----- Header ----- */
-  .header {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  /* HEADER -------------------- */
   /* Title */
   #title {
     position: sticky;
-    margin-top: -0.5em;
-    margin-left: -0.5em;
-    margin-right: -0.25em;
-    padding-top: 0.5em;
+    padding-top: 0.3em;
     padding-bottom: 0.3em;
     font-family: "Sarina", sans-serif;
     text-align: center;
@@ -72,7 +68,7 @@ table th {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 0.2em;
+    padding: 0.5em;
     border: none;
     background: transparent;
     font-size: 2em;
@@ -88,7 +84,7 @@ table th {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.15em;
+    padding: 0.5em;
     border: none;
     background: transparent;
     font-size: 2em;
@@ -110,9 +106,6 @@ table th {
     display: none;
   }
   #nav {
-    box-sizing: border-box;
-    margin-left: -0.5em;
-    margin-right: -0.25em;
     margin-bottom: 0.5em;
     position: sticky;
     background-color: #086375;
@@ -140,9 +133,6 @@ table th {
   /* Subtitle */
   .subtitle {
     background-color: #086375;
-    box-sizing: border-box;
-    margin-left: -0.5em;
-    margin-right: -0.25em;
     color: #FFC6C6;
     font-family: "Chewy", sans-serif;
     text-align: center;
@@ -155,11 +145,6 @@ table th {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  .bodyblock {
-    box-sizing: border-box;
-    margin-left: -0.5em;
-    margin-right: -0.5em;
   }
   .aside {
     display: none;
@@ -197,12 +182,12 @@ table th {
     color: #2C1320;
   }
   #space {
-    color: #FFC6C6;
-    font-size: 0em;
+    color: transparent;
+    font-size: 0.5em;
   }
   .body {
-    box-sizing: border-box;
-    min-height: 75vh;
+    display: block;
+    min-height: 65vh;
     margin-top: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -218,7 +203,6 @@ table th {
   }
   .subpage label {
     display: block;
-    box-sizing: border-box;
     background: #2C1320;
     color: #FFDB9A;
     text-align: center;
@@ -325,15 +309,10 @@ table th {
     background-size: cover;
     background-position: center;
   }
-  .bodyblock {
-    margin: 0;
-    padding: 0;
-  }
   .aside {
     box-sizing: border-box;
     display: none;
     width: 15%;
-    min-height: 200vh;
     margin-left: -0.5em;
     float: left;
     background-color: #FFC6C6;
@@ -363,15 +342,12 @@ table th {
     font-size: 1.25em;
   }
   #space {
-    color: transparent;
+    font-size: 1em;
   }
   .body {
-    box-sizing: border-box;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
-    margin-bottom: 1.5%;
     padding: 1em;
-    min-height: 76vh;
+    margin: 1em;
+    min-height: 67vh;
     background-color: rgba(255, 220, 154, 0.7058823529);
   }
   .subpage label {
@@ -390,9 +366,6 @@ table th {
   }
   .subpage input:checked ~ div {
     display: block;
-  }
-  .subpage div table {
-    margin-left: -4em;
   }
   /* ----- FOOTER ----- */
   footer {

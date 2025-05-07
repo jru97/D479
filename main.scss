@@ -1,4 +1,4 @@
-/* Color Palette */
+/* COLOR PALETTE -------------------- */
 $primary: #FFC6C6; /* pink: #FFC6C6 */
 $secondary: #086375; /* teal: #086375 */
 $accent1: #FFDB9A; /* yellow: #FFDB9A */
@@ -7,16 +7,21 @@ $accent2: #81AE9D; /* green: #81AE9D */
 $accent3: #86615C; /* taupe: #86615C */
 $accent4: #2C1320; /* dark brown: #2C1329 */
 
-/* Variables */
+/* VARIABLES -------------------- */
 $mobile: 800px; /* Max width for mobile: 800px */
 $desktop: 801px; /* Min width for desktop: 801px */
 $hidden: none; /* Hidden items: none */
 
-html{
+/* UNIVERSAL -------------------- */
+*{
     font-family: "Chewy", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
+/* TEXT -------------------- */
+h1{ /* Site Title */
     font-family: "Sarina", sans-serif;
     font-size: 12vmax;
     color: white;
@@ -26,7 +31,7 @@ h1{
     text-align: center;
 }
 
-h2{
+h2{ /* Subheaders */
     text-align: center;
     color: $accent1;
     text-decoration: underline;
@@ -36,9 +41,7 @@ h2{
 
 table{
     width: 100%;
-    text-align: center;
-    display: inline-table;
-    
+    text-align: center;    
 
     th{
         text-decoration: underline;
@@ -49,20 +52,11 @@ table{
 
 /* ~~~~~ Mobile ~~~~~ */
 @media screen and (max-width: $mobile){
-/* ----- Header ----- */
-  
-    .header{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+/* HEADER -------------------- */
     /* Title */
     #title{
         position: sticky;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-        margin-right: -0.25em;
-        padding-top: 0.5em;
+        padding-top: 0.3em;
         padding-bottom: 0.3em;
 
         font-family: "Sarina", sans-serif;
@@ -80,7 +74,7 @@ table{
         position: absolute;
         top: 0;
         left: 0;
-        padding: 0.2em;
+        padding: 0.5em;
         border: none;
         background: transparent;
 
@@ -100,7 +94,7 @@ table{
         position: absolute;
         top: 0;
         right: 0;
-        padding: 0.15em;
+        padding: 0.5em;
         border: none;
         background: transparent;
 
@@ -122,9 +116,6 @@ table{
     #navtitle{ display: $hidden; }
     
     #nav{
-        box-sizing: border-box;
-        margin-left: -0.5em;
-        margin-right: -0.25em;
         margin-bottom: 0.5em;
         position: sticky;
         background-color: $secondary;
@@ -152,10 +143,7 @@ table{
     /* Subtitle */
     .subtitle{
         background-color: $secondary;
-        box-sizing: border-box;
-        margin-left: -0.5em;
-        margin-right: -0.25em;
-
+        
         color: $primary;
         font-family: "Chewy", sans-serif;
         text-align: center;
@@ -169,11 +157,6 @@ table{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-    }
-    .bodyblock{
-        box-sizing: border-box;
-        margin-left: -0.5em;
-        margin-right: -0.5em;
     }
     .aside{
         display: $hidden;
@@ -218,12 +201,12 @@ table{
     }
     
     #space{
-        color: $primary;
-        font-size: 0em;
+        color: transparent;
+        font-size: 0.5em;
     }
     .body{
-        box-sizing: border-box;
-        min-height: 75vh;
+        display: block;
+        min-height: 65vh;
         margin-top: 0.5em;
         margin-left: 0.5em;
         margin-right: 0.5em;
@@ -238,12 +221,10 @@ table{
         word-wrap: break-word;
         color: $accent4;
     }
-
+    
     .subpage{
         label{
             display: block;
-            box-sizing: border-box;
-    
             background: $accent4;
             
             color: $accent1;
@@ -254,16 +235,14 @@ table{
             display: none;
         }
 
-        input/*[type=checkbox]*/{
+        input{
             & ~ div{
                 display: $hidden;
             }
             &:checked ~ div{
                 display: block;
             }
-        }
-        
-    
+        }     
     }
 
 /* ----- FOOTER ----- */
@@ -364,17 +343,11 @@ table{
         background-position: center;
     }
 
-    .bodyblock{
-        margin: 0;
-        padding: 0;
-    }
-
     .aside{
         box-sizing: border-box;
         display: $hidden;
 
         width: 15%;
-        min-height: 200vh;
         margin-left: -0.5em;
         float: left;
         background-color: $primary;
@@ -410,14 +383,13 @@ table{
         }
     }
 
-    #space{ color: transparent; }
+    #space{  
+        font-size: 1em;
+    }
     .body{
-        box-sizing: border-box;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-        margin-bottom: 1.5%;
         padding: 1em;
-        min-height: 76vh;
+        margin: 1em;
+        min-height: 67vh;
 
         background-color: $accent1transparent;
     }
@@ -446,9 +418,6 @@ table{
             &:checked ~ div{
                 display: block;
             }
-        }
-        div table{
-            margin-left: -4em;
         }
     }
 /* ----- FOOTER ----- */
