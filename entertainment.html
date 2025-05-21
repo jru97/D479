@@ -3,314 +3,138 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
-    <!-- Page Info -->
-    <title>Taniti || Food & Lodging</title>
-    <link rel="icon" href="./Components/favicon.ico"/>
+    <!-- PAGE INFORMATION -->
+    <title>Taniti || Entertainment</title>
+    <!-- Favicon --><link rel="icon" href="./media/favicon.ico"/>
     <meta name="description" content="WGU D479 User Experience Design Task 1 by Jack Underwood (005733342)"/>
     <meta name="subject" content="WGU D479 Task 1"/>
 
-    <!-- Google Connection -->
+    <!-- GOOGLE CONNECTION -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./main.css"/>
-    <link rel="stylesheet" href="./Food & Lodging/necessities.css"/>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./stylesheet.css"/>
     <!-- Icons --><script src="https://kit.fontawesome.com/5fc5f741e7.js" crossorigin="anonymous"></script>
     <!-- Title Font --><link href="https://fonts.googleapis.com/css2?family=Festive&family=Sarina&display=swap" rel="stylesheet">
-    <!-- Nav Font --><link href="https://fonts.googleapis.com/css2?family=Chewy&family=Festive&family=Sarina&display=swap" rel="stylesheet">
+    <!-- Main Font --><link href="https://fonts.googleapis.com/css2?family=Chewy&family=Festive&family=Sarina&display=swap" rel="stylesheet">
      
     <!-- Scripts -->
 </head>
-
 <body>
-    <!-- HEADER -->
-    <div class="header">
-        <button id="home-button"><a href="./index.html"><i class="fa fa-house icon"></i></a></button>
-        <button id="nav-button" onclick="dropdown()">&#9776;</button>
+<!-- HEADER -->
+    <header>
         <div id="title">Taniti</div>
-        
-        <div id="nav" class="nav-content">
-            <div id="navtitle">Taniti </div>
-            <a id="home" href="./index.html">Home</a>
-            <a id="necessities" class="active" href="./necessities.html">Food & Lodging</a>
-            <a id="entertainment" href="./entertainment.html">Entertainment</a>
-            <a id="sightseeing" href="./sightseeing.html">Sightseeing</a>
-            <a id="transportation" href="./transportation.html">Transportation</a>
-            <a id="faq" href="./faq.html">FAQs</a>
-            <a id="projectinfo" href="./projectinfo.html">Info</a>
-        </div>
-        
-        <div class="subtitle">Food & Lodging</div>
-    </div>
 
-    <!-- BODY BLOCK -->
-     <div class="bodyblock">
-        <div class="aside">
-            <button onclick="groceriesOpen()"><a href="#groceries">Groceries</a></button>
-            <button onclick="restaurantsOpen()"><a href="#restaurants">Restaurants</a></button>
-            <button onclick="lodgingOpen()"><a href="#lodging">Lodging</a></button>
-            <button onclick="resortOpen()"><a href="#resort">Resort</a></button>
+        <button id="home-button"><a href="./index.html"><i class="fa fa-house icon"></i></a></button>
+        
+        <div id="navigation-dropdown">
+            <label id="nav-button" for="navigation-checkbox">&#9776;</label>
+            <input id="navigation-checkbox" type="checkbox"/>
+            <div id="navigation-content">
+                <div id="nav-title">Taniti</div>
+                <a id="nav-home" href="./index.html">Home</a>
+                <a id="nav-necessities" href="./necessities.html">Food & Lodging</a>
+                <a id="nav-entertainment" class="active" href="./entertainment.html">Entertainment</a>
+                <a id="nav-sightseeing" href="./sightseeing.html">Sightseeing</a>
+                <a id="nav-transportation" href="./transportation.html">Transportation</a>
+                <a id="nav-faq" href="./faq.html">FAQs</a>
+                <a id="nav-info" href="./projectinfo.html">Info</a>
+            </div>
         </div>
 
-        <div id="space">.</div>
-        <div class="body">
-            <div class="bodytext">
-                Taniti has a variety of restaurants, grocery stores, hotels, and even a 4 star resort.
-                Click the dropdowns below for more information. 
-                <br><br>
+        <div id="page-title">Entertainment</div>
+    </header>
 
-                <div id="groceries" class="subpage">
-                    <label for="groceries-checkbox">Groceries</label>
-                    <input type="checkbox" id="groceries-checkbox">
-                    <div id="groceries-text">
-                        <p>Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day.</p>
-                        <br>
-                        
-                        <h2>Supermarkets</h2>
-                        <table>
-                            <tr>
-                                <th>Walmart Supercenter</th>
-                                <th>US Foods</th>
-                            </tr>
-                            <tr>
-                                <td>7 am - 11 pm</td>
-                                <td>6 am - 6 pm</td>
-                            </tr>
-                            <tr>
-                                <td>897 Starry Drive</td>
-                                <td>19 Main Street</td>
-                            </tr>
-                            <tr>
-                                <td>+698 653-8743</td>
-                                <td>+698 369-0903</td>
-                            </tr>
-                        </table>
+<!-- PAGE CONTENT -->
+    <div id="page-content">
+        <div class="text-block">
+            <img class="center-img" alt="Boat tour" src="./media/entertainment.jpeg"/>
+            Most people visit Taniti to enjoy the beaches, explore the rainforest,
+             and to visit the volcano. However, there are other things to do, 
+             including visiting a local history museum, going on chartered fishing 
+             tours, snorkeling, zip-lining in the rainforest, visiting several 
+             pubs, including a microbrewery, dancing at a new dance club, seeing a 
+             movie, taking helicopter rides, playing at an arcade, visiting art 
+             galleries, and bowling. Also, a nine-hole golf course should be 
+             operational by next year. Many of these activities are 
+             located in Merriton Landing, which is a rapidly developing 
+             area on the north side of Yellow Leaf Bay. 
+            <br><br>
+        </div>
 
-                        <h2>Grocery Stores</h2>
-                        <table>
-                            <tr>
-                                <th>Oasis World Market</th>
-                                <th>Green Grocer</th>
-                            </tr>
-                            <tr>
-                                <td>9 am - 7 pm</td>
-                                <td>10 am - 10 pm</td>
-                            </tr>
-                            <tr>
-                                <td>134 Coral Lane</td>
-                                <td>3 Main Street</td>
-                            </tr>
-                            <tr>
-                                <td>+698 678-9289</td>
-                                <td>+698 234-3458</td>
-                            </tr>
-                        </table>
-
-                        <h2>Convenience Stores</h2>
-                        <table>
-                            <tr>
-                                <th>7/11</td>
-                            </tr>
-                            <tr>
-                                <td>Open 24/7</td>
-                            </tr>
-                            <tr>
-                                <td>8 Main Street</td>
-                            </tr>
-                            <tr>
-                                <td>+698 789-0983</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-                <br>
-
-                <div id="restaurants" class="subpage">
-                    <label for="restaurants-checkbox">Restaurants</label>
-                    <input type="checkbox" id="restaurants-checkbox">
-                    <div id="restaurants-text">
-                        <p>Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.</p>
-                        <br>
-                        <h2>Local Cuisine</h2>
-                        <table>
-                            <tr>
-                                <th>Fishery</th>
-                                <th>Island Cooking</th>
-                                <th>By the Wharf</th>
-                            </tr>
-                            <tr>
-                                <td>7 am - 5 pm</td>
-                                <td>12 pm - 2 am</td>
-                                <td>10 am - 1 am</th>
-                            </tr>
-                            <tr>
-                                <td>3 Main Street</td>
-                                <td>14 Starfruit Circle</td>
-                                <td>10 Beach Lane</th>
-                            </tr>
-                            <tr>
-                                <td>+698 765-0128</td>
-                                <td>+698 324-4562</td>
-                                <td>+698 356-9238</td>
-                            </tr>
-                            <tr></tr><tr></tr><tr></tr>
-                            <tr></tr><tr></tr><tr></tr>
-                            <tr>
-                                <th>Fishensnips</th>
-                                <th>Taniti Bar & Grill</th>
-                            </tr>
-                            <tr>
-                                <td>4 pm - 2 am</td>
-                                <td>10 am - 3 am</td>
-                            </tr>
-                            <tr>
-                                <td>14 Main Street</td>
-                                <td>4 Beach Lane</td>
-                            </tr>
-                            <tr>
-                                <td>+698 368-9865</td>
-                                <td>+698 647-0736</td>
-                            </tr>
-                            <tr></tr><tr></tr><tr></tr>
-                            <tr></tr><tr></tr><tr></tr>
-                        </table>
-                        <h2>American Cuisine</h2>
-                        <table>
-                            <tr>
-                                <th>All Star Cafe</th>
-                                <th>Waffle House</th>
-                                <th>Shake Shack</th>
-                            </tr>
-                            <tr>
-                                <td>7 am - 9 pm</td>
-                                <td>Open 24/7</td>
-                                <td>noon - 11 pm</td>
-                            </tr>
-                            <tr>
-                                <td>7 Main Street</td>
-                                <td>10 Main Street</td>
-                                <td>7 Beach Lane</td>
-                            </tr>
-                            <tr>
-                                <td>+698 357-9239</td>
-                                <td>+698 123-9871</td>
-                                <td>+698 124-2452</td>
-                            </tr>
-                        </table>
-
-                        <h2>Pan-Asian Cuisine</h2>
-                        <table>
-                            <tr>
-                                <th>Pho Saigon</th>
-                                <th>Cafe Asia</th>
-                            </tr>
-                            <tr>
-                                <td>11 am - 10 pm</td>
-                                <td>10 am - 11 pm</td>
-                            </tr>
-                            <tr>
-                                <td>7 Starfruit Circle</td>
-                                <td>5 Beach Lane</td>
-                            </tr>
-                            <tr>
-                                <td>+698 234-9873</td>
-                                <td>+698 642-1239</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-                <br>
-
-                <div id="lodging" class="subpage">
-                    <label for="lodging-checkbox">Lodging</label>
-                    <input type="checkbox" id="lodging-checkbox">
-                    <div id="lodging-text">
-                        Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.
-                        <br><br>Reservations can be made through any major booking site.
-                    </div>
-                </div>
-                
-                <br>
-
-                <div id="resort" class="subpage">
-                    <label for="resort-checkbox">Resort</label>
-                    <input type="checkbox" id="resort-checkbox">
-                    <div id="resort-text">Taniti's large, 4 star resort has everything you could need. 
-                        From several large outdoor pools, a business center, multiple restaurants, and bars.
-                        <br>All types of lodging are strictly regulated and regularly inspected by the Tanitian government. </div>
+        <div class="dropdown">
+            <label for="tour-checkbox">Tours</label>
+            <input id="tour-checkbox" type="checkbox"/>
+            <div class="dropdown-content">
+                <div class="text-block right">
+                    <img class="left-img" src="./media/tours.jpg"/>
+                    <br>
+                    Learn more about Taniti with a curated tour! Discover Taniti's vibrant culture at the local history museum,
+                    tour the treetops by ziplining through the rainforest, or spend the day on a chartered fishing tour.
+                    <br><br>
+                    <bold><mark>Feeling adventurous? Explore Taniti from the sky on a helicopter ride!</mark></bold>
+                    <br><br>
+                    For more information and to book tours in advance, 
+                    <br>call <bold>+698 (504) 234-2345.</bold>
                 </div>
             </div>
         </div>
-        <div id="space">.</div>
-        <div id="space">.</div>
-        
-    <!-- FOOTER -->
+
+        <div class="dropdown">
+            <label for="ml-checkbox">Merriton Landing</label>
+            <input id="ml-checkbox" type="checkbox"/>
+            <div class="dropdown-content">
+                <div class="text-block left">
+                    <img class="right-img" alt="City Center" src="./media/citycenter.jpg"/>
+                    <br>
+                    Located on the north side of Yellow Leaf Bay, Merriton Landing has
+                    plenty to see and do. From seeing the latest movie, playing at our retro arcade,
+                    visiting art galleries, bowling, or dancing; Merriton Landing has it all.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <label for="ylb-checkbox">Yellow Leaf Bay</label>
+            <input id="ylb-checkbox" type="checkbox"/>
+            <div class="dropdown-content">
+                <div class="text-block right">
+                    <img class="left-img" alt="Yellow Leaf Bay" src="./media/bay.jpg"/>
+
+                    Taniti's beautiful bay is beloved by snorklers, swimmers, and divers alike. 
+                    With a wide variety of fish and corals, there's always something stunning to see under the waves!
+                    <br><br>
+                    Please keep in mind Taniti's water preservation guidelines to help maintain this beautiful natural
+                    resource for generations to come. Any questions or concerns can be directed to
+                    the Tanitian Department of Fish and Wildlife.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <label for="checkbox">Taniti-Nui Volcano</label>
+            <input id="checkbox" type="checkbox"/>
+            <div class="dropdown-content">
+                <div class="text-block left">
+                    <img class="right-img" alt="Volcano" src="./media/volcano.jpg"/>
+                    
+                    Rising above the island is Taniti's own Taniti-Nui, the primary volcano that created Taniti.
+                    Visitors can climb the slopes of this majestic volcano, with several overlooks on the path
+                    to observe the island. Don't worry, although classified as active, Taniti-Nui tends to be
+                    quiet.
+                    <br><br>
+                    Please observe the daily news report and trail signage. The trail may be closed due to poor weather
+                    conditions, seismic activity, or other hazards. This is determined by the Tanitian Fish & Wildlife
+                    Department, Taniti Meteorological Society, and City Hall.
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- FOOTER -->
     <footer>
         <a id="sitemap" href="./sitemap.html">Site Map</a><br>
         Developed by Jack Underwood (005733342) for WGU D479 User Experience Design
     </footer>
-
-    <!-- SCRIPTS -->
-    <script> 
-        function dropdown() {
-            var x = document.getElementById("nav");
-            if (x.className === "nav-content") {
-                x.className += "show";
-            } else {
-                x.className = "nav-content";
-            }
-        }
-
-        function groceriesOpen() {
-            var groceries = document.getElementById("groceries-checkbox");
-            var restaurants = document.getElementById("restaurants-checkbox");
-            var lodging = document.getElementById("lodging-checkbox");
-            var resort = document.getElementById("resort-checkbox");
-
-            groceries.checked = true;
-            restaurants.checked = false;
-            lodging.checked = false;
-            resort.checked = false;
-        }
-
-        function restaurantsOpen() {
-            var groceries = document.getElementById("groceries-checkbox");
-            var restaurants = document.getElementById("restaurants-checkbox");
-            var lodging = document.getElementById("lodging-checkbox");
-            var resort = document.getElementById("resort-checkbox");
-
-            groceries.checked = false;
-            restaurants.checked = true;
-            lodging.checked = false;
-            resort.checked = false;
-        }
-
-        function lodgingOpen() {
-            var groceries = document.getElementById("groceries-checkbox");
-            var restaurants = document.getElementById("restaurants-checkbox");
-            var lodging = document.getElementById("lodging-checkbox");
-            var resort = document.getElementById("resort-checkbox");
-
-            groceries.checked = false;
-            restaurants.checked = false;
-            lodging.checked = true;
-            resort.checked = false;
-        }
-
-        function resortOpen() {
-            var groceries = document.getElementById("groceries-checkbox");
-            var restaurants = document.getElementById("restaurants-checkbox");
-            var lodging = document.getElementById("lodging-checkbox");
-            var resort = document.getElementById("resort-checkbox");
-
-            groceries.checked = false;
-            restaurants.checked = false;
-            lodging.checked = false;
-            resort.checked = true;
-        }
-
-    </script>
 </body>

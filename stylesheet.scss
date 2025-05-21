@@ -1,0 +1,555 @@
+/* Color Palette */
+$primary: #FFC6C6; /* pink: #FFC6C6 */
+$secondary: #086375; /* teal: #086375 */
+$accent1: #FFDB9A; /* yellow: #FFDB9A */
+$accent1transparent: #FFDC9AB4; /* yellow transparent: #FFDC9AB4 */
+$accent2: #81AE9D; /* green: #81AE9D */
+$accent3: #86615C; /* taupe: #86615C */
+$accent4: #2C1329; /* dark brown: #2C1329 */
+
+/* Fonts */
+$mainfont: "Chewy"; /* Main font: Chewy */
+$titlefont: "Sarina"; /* Title font: Sarina */
+
+/* Variables */
+$mobile: 800px; /* Max width for mobile: 800px */
+$desktop: 801px; /* Min width for desktop: 801px */
+$hidden: none; /* Hidden items: none */
+
+/* Universal */
+*{
+    font-family: $mainfont, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: $accent4;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+mark{
+    background-color: $primary;
+}
+
+/* MOBILE ~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: $mobile){
+/* Mobile Navigational Buttons */
+    #home-button{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.5em;
+
+        border: none;
+        background: transparent;
+
+        font-size: 2em;
+
+        .fa-house{ /* Coloring the house icon */
+            color: $secondary;
+
+            &:hover{
+                color: $accent4;
+            }
+        }
+    }
+
+    #nav-button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.5em;
+
+        font-size: 2em;
+        font-weight: bold;
+        color: $secondary;
+
+        &:hover{
+            color: $accent4;
+        }
+    }
+
+/* Title */
+    #title{
+        position: sticky;
+        padding: 0.3em;
+
+        font-family: $titlefont;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: $secondary;
+        text-shadow: 1px 1px $accent4;
+
+        background-color: $primary;
+    }
+
+/* Navigation */
+    #navigation-dropdown{
+        label{
+            display: block;
+
+            background-color: transparent;
+        }
+
+        #navigation-checkbox{
+            display: $hidden;
+
+            & ~ div{ display: $hidden; }
+
+            &:checked ~ div{ display: block; }
+        }
+
+        #navigation-content{
+            margin-bottom: 0.5em;
+
+            background-color: $secondary;
+
+            font-size: 2em;
+
+            #nav-title{ display: $hidden; }
+            #nav-home{ display: $hidden; }
+            .active{ display: $hidden; }
+
+            a{
+                display: block;
+                padding: 0.25em;
+
+                text-decoration: none;
+                color: $accent1;
+
+                &:hover{
+                    background-color: $accent1;
+
+                    color: $accent4;
+                }
+            }
+        }
+    }
+
+/* Page Title */
+    #page-title{
+        background-color: $secondary;
+
+        text-align: center;
+        font-size: 2em;
+        color: $primary;
+        text-shadow: 1px 1px $accent4;
+    }
+
+/* All Pages */
+    body{
+        background: no-repeat center/cover url("./media/plumeria.jpg");
+    }
+
+/* Generic Page Content */
+    #page-content{
+        display: block;
+        min-height: 69vh;
+        margin: 0.5em;
+        padding: 0.5em;
+
+        background-color: $accent1transparent;
+    }
+
+/* 404 Error Page Content */
+    #error-content{ display: $hidden; }
+
+/* Index Page Content */
+    #index-content{
+        min-height: 68vh;
+        padding-top: 9vh;
+        
+        h1{
+            font-family: $titlefont;
+            font-size: 15vw;
+            font-stretch: normal;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            line-height: normal;
+            text-decoration: none;
+        
+            color: white;
+            text-shadow: 5px 1px 1px $accent4;
+            -webkit-text-stroke: 1px $accent4;
+        
+            text-align: center;
+            background-color: transparent;
+        }
+    }
+
+/* Project Info Page Content */
+    #info-content{
+        margin: 0.5em;
+        padding: 0.5em;
+
+        background-color: $accent1transparent;
+    }
+
+/* Page Elements */
+    .textblock{
+        text-align: justify;
+    }
+
+    .left{ text-align: left; }
+    .right{ text-align: right; }
+
+    .dropdown{
+        padding-top: 1em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 1em;
+
+        label{
+            display: block;
+
+            background-color: $accent4;
+
+            color: $accent1;
+        }
+
+        input{
+            display: $hidden;
+
+            & ~ div{ display: $hidden; }
+
+            &:checked ~ div{ display: block; }
+        }
+
+        .dropdown-content{
+            min-height: 60vh;
+            padding-top: 1em;
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-bottom: 1em;
+            border: 2px solid $accent4;
+        }
+    }
+
+    .text-table{
+        width: 100%;
+
+        th{
+            font-size: 1.25em;
+            text-decoration: underline;
+            text-shadow: 1px 1px 1px $accent3;
+        }
+    }
+
+    .center-img{
+        display: block;
+        margin: auto;
+        padding: 1em;
+
+        height: 40vw;
+        width: auto;
+        clear: both; /* Ensures no overlap */
+    }
+
+    .right-img{
+        height: 40vw;
+            width: auto;
+            padding: 1em;
+            float:right;
+            clear: both; /* Ensures no overlap */
+    }
+
+    .left-img{
+        height: 40vw;
+        width: auto;
+        padding: 0.5em;
+        float: left;
+        clear: both; /* Ensures no overlap */    
+    }
+
+    .img-table{
+        width: 100%;
+        padding: 0.5em;
+        border-spacing: 0.25em 0;
+
+        tbody{
+            td{
+                padding: 0.25em;
+
+                img{
+                    width: 25vw;
+                    object-fit:contain;
+                }
+            }   
+        }
+
+        tfoot{
+            td{
+                padding: 0.25em;
+            }
+        }        
+    }
+
+    embed{
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .reference{
+        min-height: 22vh;
+        padding: 0.25em;
+
+        border: 1px solid $accent3;
+
+        text-align: left;
+
+        img{
+            float: left;
+            height: 20vh;
+            width: auto;
+            padding-right: 0.5em;
+        }
+
+        i{ font-size: 10vh; }
+    }
+
+/* Footer */
+    footer{
+        position: relative;
+        width: 100%;
+
+        background-color: $secondary;
+
+        font-weight: bold;
+        color: $primary;
+
+        a{ color: $primary; }
+    }
+
+}
+
+/* DESKTOP ~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: $desktop){
+    /* Mobile Navigational Buttons */
+        #home-button{ display: $hidden; }
+    
+        #nav-button{ display: $hidden; }
+
+    /* Title */
+        #title{ display: $hidden; }
+    
+    /* Navigation */
+        #navigation-dropdown{
+            label{ display: $hidden; }
+    
+            #navigation-checkbox{ display: $hidden; }
+    
+            #navigation-content{
+                margin-bottom: 0.5em;
+                padding: 0.5em;
+    
+                background-color: $secondary;
+    
+                font-size: 3vmin;
+                text-align: left;
+    
+                .active{ /* Colors the current page */
+                    background-color: $accent1;
+                    color: $accent4;
+                }
+
+                #nav-title{ 
+                    display: inline-block;
+                    padding-top: 0.5em;
+                    padding-right: 1.5em; 
+                    padding-left: 0.5em;
+                    padding-bottom: 0.5em;
+
+                    font-family: $titlefont;
+                    color: $primary;
+                    font-size: 3.5vmin; 
+                }
+
+                a{
+                    display: inline-block;
+                    padding: 0.25em;
+    
+                    text-decoration: none;
+                    color: $accent1;
+    
+                    &:hover{
+                        background-color: $accent1;
+    
+                        color: $accent4;
+                    }
+                }
+            }
+        }
+    
+    /* Page Title */
+        #page-title{ display: $hidden; }
+    
+    /* All Pages */
+        body{
+            background: no-repeat center/cover url("./media/plumeria.jpg");
+        }
+    
+    /* Generic Page Content */
+        #page-content{
+            display: block;
+            min-height: 79vh;
+            margin: 0.5em;
+            padding: 0.5em;
+    
+            background-color: $accent1transparent;
+        }
+    
+    /* 404 Error Page Content */
+        #error-content{ display: $hidden; }
+    
+    /* Index Page Content */
+        #index-content{
+            min-height: 76vh;
+            padding-top: 20vh;
+            
+            h1{
+                font-family: $titlefont;
+                font-size: 10vw;
+                font-stretch: normal;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: normal;
+                line-height: normal;
+                text-decoration: none;
+            
+                color: white;
+                text-shadow: 5px 1px 1px $accent4;
+                -webkit-text-stroke: 1px $accent4;
+            
+                text-align: center;
+                background-color: transparent;
+            }
+        }
+    
+    /* Project Info Page Content */
+        #info-content{
+            margin: 0.5em;
+            padding: 0.5em;
+
+            background-color: $accent1transparent;
+         }
+    
+    /* Page Elements */
+        .textblock{
+            text-align: justify;
+        }
+    
+        .left{ text-align: left; }
+        .right{ text-align: right; }
+
+        .dropdown{
+            padding-top: 1em;
+            padding-bottom: 1em;
+    
+            label{
+                display: block;
+    
+                background-color: $accent4;
+    
+                color: $accent1;
+            }
+    
+            input{
+                display: $hidden;
+    
+                & ~ div{ display: $hidden; }
+    
+                &:checked ~ div{ display: block; }
+            }
+    
+            .dropdown-content{
+                min-height: 45vh;
+                padding: 0.5em;
+                border: 2px solid $accent4;
+                border-collapse: collapse;
+            }
+        }
+    
+        .text-table{
+            width: 100%;
+    
+            th{
+                font-size: 1.25em;
+                text-decoration: underline;
+                text-shadow: 1px 1px 1px $accent3;
+            }
+        }
+    
+        .center-img{
+            display: block;
+            margin: auto;
+            padding: 1em;
+    
+            height: 40vh;
+            width: auto;
+            clear: both; /* Ensures no overlap */
+        }
+    
+        .right-img{
+            height: 40vh;
+                width: auto;
+                padding: 1em;
+                float:right;
+                clear: both; /* Ensures no overlap */
+        }
+    
+        .left-img{
+            height: 40vh;
+            width: auto;
+            padding: 1em;
+            float: left;
+            clear: both; /* Ensures no overlap */    
+        }
+
+        .img-table{
+            width: 100%;
+            padding: 0.5em;
+            border-spacing: 0.75em 0;
+    
+            tbody{
+                td{
+                    padding: 0.25em;
+    
+                    img{
+                        width: 25vw;
+                        object-fit:contain;
+                    }
+                }   
+            }
+    
+            tfoot{
+                td{
+                    padding: 0.25em;
+                }
+            }        
+        }
+
+        .reference{
+            min-height: 30vh;
+    
+            img{
+                float: right;
+                height: 20vh;
+                padding: 1em;
+            }
+        }
+    
+    /* Footer */
+        footer{
+            position: relative;
+            width: 100%;
+    
+            background-color: $secondary;
+    
+            font-weight: bold;
+            color: $primary;
+    
+            a{ color: $primary; }
+        }
+    
+    }

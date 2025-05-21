@@ -1,0 +1,472 @@
+/* Color Palette */
+/* pink: #FFC6C6 */
+/* teal: #086375 */
+/* yellow: #FFDB9A */
+/* yellow transparent: #FFDC9AB4 */
+/* green: #81AE9D */
+/* taupe: #86615C */
+/* dark brown: #2C1329 */
+/* Fonts */
+/* Main font: Chewy */
+/* Title font: Sarina */
+/* Variables */
+/* Max width for mobile: 800px */
+/* Min width for desktop: 801px */
+/* Hidden items: none */
+/* Universal */
+* {
+  font-family: "Chewy", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #2C1329;
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+
+mark {
+  background-color: #FFC6C6;
+}
+
+/* MOBILE ~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 800px) {
+  /* Mobile Navigational Buttons */
+  #home-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    border: none;
+    background: transparent;
+    font-size: 2em;
+  }
+  #home-button .fa-house { /* Coloring the house icon */
+    color: #086375;
+  }
+  #home-button .fa-house:hover {
+    color: #2C1329;
+  }
+  #nav-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+    color: #086375;
+  }
+  #nav-button:hover {
+    color: #2C1329;
+  }
+  /* Title */
+  #title {
+    position: sticky;
+    padding: 0.3em;
+    font-family: "Sarina";
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #086375;
+    text-shadow: 1px 1px #2C1329;
+    background-color: #FFC6C6;
+  }
+  /* Navigation */
+  #navigation-dropdown label {
+    display: block;
+    background-color: transparent;
+  }
+  #navigation-dropdown #navigation-checkbox {
+    display: none;
+  }
+  #navigation-dropdown #navigation-checkbox ~ div {
+    display: none;
+  }
+  #navigation-dropdown #navigation-checkbox:checked ~ div {
+    display: block;
+  }
+  #navigation-dropdown #navigation-content {
+    margin-bottom: 0.5em;
+    background-color: #086375;
+    font-size: 2em;
+  }
+  #navigation-dropdown #navigation-content #nav-title {
+    display: none;
+  }
+  #navigation-dropdown #navigation-content #nav-home {
+    display: none;
+  }
+  #navigation-dropdown #navigation-content .active {
+    display: none;
+  }
+  #navigation-dropdown #navigation-content a {
+    display: block;
+    padding: 0.25em;
+    text-decoration: none;
+    color: #FFDB9A;
+  }
+  #navigation-dropdown #navigation-content a:hover {
+    background-color: #FFDB9A;
+    color: #2C1329;
+  }
+  /* Page Title */
+  #page-title {
+    background-color: #086375;
+    text-align: center;
+    font-size: 2em;
+    color: #FFC6C6;
+    text-shadow: 1px 1px #2C1329;
+  }
+  /* All Pages */
+  body {
+    background: no-repeat center/cover url("./media/plumeria.jpg");
+  }
+  /* Generic Page Content */
+  #page-content {
+    display: block;
+    min-height: 69vh;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgba(255, 220, 154, 0.7058823529);
+  }
+  /* 404 Error Page Content */
+  #error-content {
+    display: none;
+  }
+  /* Index Page Content */
+  #index-content {
+    min-height: 68vh;
+    padding-top: 9vh;
+  }
+  #index-content h1 {
+    font-family: "Sarina";
+    font-size: 15vw;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 1px 1px #2C1329;
+    -webkit-text-stroke: 1px #2C1329;
+    text-align: center;
+    background-color: transparent;
+  }
+  /* Project Info Page Content */
+  #info-content {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgba(255, 220, 154, 0.7058823529);
+  }
+  /* Page Elements */
+  .textblock {
+    text-align: justify;
+  }
+  .left {
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+  }
+  .dropdown {
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+  }
+  .dropdown label {
+    display: block;
+    background-color: #2C1329;
+    color: #FFDB9A;
+  }
+  .dropdown input {
+    display: none;
+  }
+  .dropdown input ~ div {
+    display: none;
+  }
+  .dropdown input:checked ~ div {
+    display: block;
+  }
+  .dropdown .dropdown-content {
+    min-height: 60vh;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    border: 2px solid #2C1329;
+  }
+  .text-table {
+    width: 100%;
+  }
+  .text-table th {
+    font-size: 1.25em;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px #86615C;
+  }
+  .center-img {
+    display: block;
+    margin: auto;
+    padding: 1em;
+    height: 40vw;
+    width: auto;
+    clear: both; /* Ensures no overlap */
+  }
+  .right-img {
+    height: 40vw;
+    width: auto;
+    padding: 1em;
+    float: right;
+    clear: both; /* Ensures no overlap */
+  }
+  .left-img {
+    height: 40vw;
+    width: auto;
+    padding: 0.5em;
+    float: left;
+    clear: both; /* Ensures no overlap */
+  }
+  .img-table {
+    width: 100%;
+    padding: 0.5em;
+    border-spacing: 0.25em 0;
+  }
+  .img-table tbody td {
+    padding: 0.25em;
+  }
+  .img-table tbody td img {
+    width: 25vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .img-table tfoot td {
+    padding: 0.25em;
+  }
+  embed {
+    width: 70vw;
+    height: 50vh;
+  }
+  .reference {
+    min-height: 22vh;
+    padding: 0.25em;
+    border: 1px solid #86615C;
+    text-align: left;
+  }
+  .reference img {
+    float: left;
+    height: 20vh;
+    width: auto;
+    padding-right: 0.5em;
+  }
+  .reference i {
+    font-size: 10vh;
+  }
+  /* Footer */
+  footer {
+    position: relative;
+    width: 100%;
+    background-color: #086375;
+    font-weight: bold;
+    color: #FFC6C6;
+  }
+  footer a {
+    color: #FFC6C6;
+  }
+}
+/* DESKTOP ~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 801px) {
+  /* Mobile Navigational Buttons */
+  #home-button {
+    display: none;
+  }
+  #nav-button {
+    display: none;
+  }
+  /* Title */
+  #title {
+    display: none;
+  }
+  /* Navigation */
+  #navigation-dropdown label {
+    display: none;
+  }
+  #navigation-dropdown #navigation-checkbox {
+    display: none;
+  }
+  #navigation-dropdown #navigation-content {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    background-color: #086375;
+    font-size: 3vmin;
+    text-align: left;
+  }
+  #navigation-dropdown #navigation-content .active { /* Colors the current page */
+    background-color: #FFDB9A;
+    color: #2C1329;
+  }
+  #navigation-dropdown #navigation-content #nav-title {
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: "Sarina";
+    color: #FFC6C6;
+    font-size: 3.5vmin;
+  }
+  #navigation-dropdown #navigation-content a {
+    display: inline-block;
+    padding: 0.25em;
+    text-decoration: none;
+    color: #FFDB9A;
+  }
+  #navigation-dropdown #navigation-content a:hover {
+    background-color: #FFDB9A;
+    color: #2C1329;
+  }
+  /* Page Title */
+  #page-title {
+    display: none;
+  }
+  /* All Pages */
+  body {
+    background: no-repeat center/cover url("./media/plumeria.jpg");
+  }
+  /* Generic Page Content */
+  #page-content {
+    display: block;
+    min-height: 79vh;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgba(255, 220, 154, 0.7058823529);
+  }
+  /* 404 Error Page Content */
+  #error-content {
+    display: none;
+  }
+  /* Index Page Content */
+  #index-content {
+    min-height: 76vh;
+    padding-top: 20vh;
+  }
+  #index-content h1 {
+    font-family: "Sarina";
+    font-size: 10vw;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 1px 1px #2C1329;
+    -webkit-text-stroke: 1px #2C1329;
+    text-align: center;
+    background-color: transparent;
+  }
+  /* Project Info Page Content */
+  #info-content {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgba(255, 220, 154, 0.7058823529);
+  }
+  /* Page Elements */
+  .textblock {
+    text-align: justify;
+  }
+  .left {
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+  }
+  .dropdown {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .dropdown label {
+    display: block;
+    background-color: #2C1329;
+    color: #FFDB9A;
+  }
+  .dropdown input {
+    display: none;
+  }
+  .dropdown input ~ div {
+    display: none;
+  }
+  .dropdown input:checked ~ div {
+    display: block;
+  }
+  .dropdown .dropdown-content {
+    min-height: 45vh;
+    padding: 0.5em;
+    border: 2px solid #2C1329;
+    border-collapse: collapse;
+  }
+  .text-table {
+    width: 100%;
+  }
+  .text-table th {
+    font-size: 1.25em;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px #86615C;
+  }
+  .center-img {
+    display: block;
+    margin: auto;
+    padding: 1em;
+    height: 40vh;
+    width: auto;
+    clear: both; /* Ensures no overlap */
+  }
+  .right-img {
+    height: 40vh;
+    width: auto;
+    padding: 1em;
+    float: right;
+    clear: both; /* Ensures no overlap */
+  }
+  .left-img {
+    height: 40vh;
+    width: auto;
+    padding: 1em;
+    float: left;
+    clear: both; /* Ensures no overlap */
+  }
+  .img-table {
+    width: 100%;
+    padding: 0.5em;
+    border-spacing: 0.75em 0;
+  }
+  .img-table tbody td {
+    padding: 0.25em;
+  }
+  .img-table tbody td img {
+    width: 25vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .img-table tfoot td {
+    padding: 0.25em;
+  }
+  .reference {
+    min-height: 30vh;
+  }
+  .reference img {
+    float: right;
+    height: 20vh;
+    padding: 1em;
+  }
+  /* Footer */
+  footer {
+    position: relative;
+    width: 100%;
+    background-color: #086375;
+    font-weight: bold;
+    color: #FFC6C6;
+  }
+  footer a {
+    color: #FFC6C6;
+  }
+}/*# sourceMappingURL=stylesheet.css.map */
