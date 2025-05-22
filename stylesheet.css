@@ -158,6 +158,12 @@ mark {
     padding: 0.5em;
     background-color: rgba(255, 220, 154, 0.7058823529);
   }
+  /* Site Map Page Content */
+  #map-content {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgba(255, 220, 154, 0.7058823529);
+  }
   /* Page Elements */
   .textblock {
     text-align: justify;
@@ -366,6 +372,12 @@ mark {
   }
   /* Project Info Page Content */
   #info-content {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: rgba(255, 220, 154, 0.7058823529);
+  }
+  /* Site Map Page Content */
+  #map-content {
     margin: 0.5em;
     padding: 0.5em;
     background-color: rgba(255, 220, 154, 0.7058823529);
