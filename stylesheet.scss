@@ -27,9 +27,6 @@ $hidden: none; /* Hidden items: none */
     text-wrap: wrap;
     word-wrap: break-word;
 }
-mark{
-    background-color: $primary;
-}
 
 /* MOBILE ~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (max-width: $mobile){
@@ -279,13 +276,13 @@ mark{
         margin: auto;
         padding: 1em;
 
-        height: 40vw;
+        height: 35vw;
         width: auto;
         clear: both; /* Ensures no overlap */
     }
 
     .right-img{
-        height: 40vw;
+            height: 35vw;
             width: auto;
             padding: 1em;
             float:right;
@@ -293,7 +290,7 @@ mark{
     }
 
     .left-img{
-        height: 40vw;
+        height: 35vw;
         width: auto;
         padding: 0.5em;
         float: left;

@@ -25,10 +25,6 @@
   word-wrap: break-word;
 }
 
-mark {
-  background-color: #FFC6C6;
-}
-
 /* MOBILE ~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (max-width: 800px) {
   /* Mobile Navigational Buttons */
@@ -243,19 +239,19 @@ mark {
     display: block;
     margin: auto;
     padding: 1em;
-    height: 40vw;
+    height: 35vw;
     width: auto;
     clear: both; /* Ensures no overlap */
   }
   .right-img {
-    height: 40vw;
+    height: 35vw;
     width: auto;
     padding: 1em;
     float: right;
     clear: both; /* Ensures no overlap */
   }
   .left-img {
-    height: 40vw;
+    height: 35vw;
     width: auto;
     padding: 0.5em;
     float: left;
