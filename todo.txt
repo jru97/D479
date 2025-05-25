@@ -1,7 +1,7 @@
-- sources for background, food & lodging, entertainment
-- sightseeing page
-- transportation page
+- sources
+- cite images on pages
 - 5 objective usability tasks
+- flow diagram
 - check formatting
 - turn in document
 

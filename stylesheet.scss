@@ -144,15 +144,39 @@ mark{
 /* Generic Page Content */
     #page-content{
         display: block;
-        min-height: 69vh;
         margin: 0.5em;
         padding: 0.5em;
 
         background-color: $accent1transparent;
     }
 
+    .regular{ min-height: 69vh; }
+    .long { min-height: 175vh; }
+        
+
 /* 404 Error Page Content */
-    #error-content{ display: $hidden; }
+    #error-content{ 
+        min-height: 79vh;
+        padding-top: 20vh;
+        
+        h1{
+            font-family: $titlefont;
+            font-size: 15vw;
+            font-stretch: normal;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            line-height: normal;
+            text-decoration: none;
+        
+            color: white;
+            text-shadow: 5px 1px 1px $accent4;
+            -webkit-text-stroke: 1px $accent4;
+        
+            text-align: center;
+            background-color: transparent;
+        }
+    }
 
 /* Index Page Content */
     #index-content{
@@ -201,6 +225,7 @@ mark{
 
     .left{ text-align: left; }
     .right{ text-align: right; }
+    .justify{ text-align: justify; }
 
     .dropdown{
         padding-top: 1em;
@@ -224,13 +249,18 @@ mark{
             &:checked ~ div{ display: block; }
         }
 
+        .large{ min-height: 60vh; }
+        
         .dropdown-content{
-            min-height: 60vh;
             padding-top: 1em;
             padding-left: 2em;
             padding-right: 2em;
             padding-bottom: 1em;
             border: 2px solid $accent4;
+
+            ol, ul{
+                padding-left: 2em;
+            }
         }
     }
 
@@ -312,8 +342,6 @@ mark{
             width: auto;
             padding-right: 0.5em;
         }
-
-        i{ font-size: 10vh; }
     }
 
 /* Footer */
@@ -400,15 +428,38 @@ mark{
     /* Generic Page Content */
         #page-content{
             display: block;
-            min-height: 79vh;
             margin: 0.5em;
             padding: 0.5em;
     
             background-color: $accent1transparent;
         }
     
+        .regular{ min-height: 79vh; }
+        .long { min-height: 175vh; }
+        
     /* 404 Error Page Content */
-        #error-content{ display: $hidden; }
+        #error-content{
+            min-height: 80vh;
+            padding-top: 20vh;
+            
+            h1{
+                font-family: $titlefont;
+                font-size: 10vw;
+                font-stretch: normal;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: normal;
+                line-height: normal;
+                text-decoration: none;
+            
+                color: white;
+                text-shadow: 5px 1px 1px $accent4;
+                -webkit-text-stroke: 1px $accent4;
+            
+                text-align: center;
+                background-color: transparent;
+            }
+        }
     
     /* Index Page Content */
         #index-content{
@@ -457,6 +508,7 @@ mark{
     
         .left{ text-align: left; }
         .right{ text-align: right; }
+        .justify{ text-align: justify; }
 
         .dropdown{
             padding-top: 1em;
@@ -464,9 +516,11 @@ mark{
     
             label{
                 display: block;
+                padding: 0.25em;
     
                 background-color: $accent4;
     
+                font-size: 1.5em;
                 color: $accent1;
             }
     
@@ -478,11 +532,15 @@ mark{
                 &:checked ~ div{ display: block; }
             }
     
+            .large{ min-height: 45vh; }
             .dropdown-content{
-                min-height: 45vh;
                 padding: 0.5em;
                 border: 2px solid $accent4;
                 border-collapse: collapse;
+
+                ol, ul{
+                    padding-left: 2em;
+                }
             }
         }
     
@@ -546,13 +604,28 @@ mark{
         }
 
         .reference{
-            min-height: 30vh;
-    
-            img{
-                float: right;
-                height: 20vh;
-                padding: 1em;
+            min-height: 23vh;
+            padding: 0.25em;
+
+            border: 1px solid $accent3;
+
+            text-align: left;
+
+            .fa-house{
+                font-size: 6em;
+                float: left;
             }
+            img{
+                float: left;
+                height: 20vh;
+                width: auto;
+                padding-right: 0.5em;
+            }
+        }
+
+        embed{
+            width: 60em;
+            height: 70vh;
         }
     
     /* Footer */

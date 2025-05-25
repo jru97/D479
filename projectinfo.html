@@ -48,15 +48,17 @@
         </header>
     
     <!-- PAGE CONTENT -->
-        <div id="page-content">
+        <div id="page-content" class="regular">
 
             <div id="text-block">
                 <br>
                 This project was created for WGU D479 User Experience Design 2025 by Jack Underwood.
+                <br><br>
+                Clicking the headers will display the information from that section.
                 <br>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown"> <!-- Rubric -->
                 <label for="rubric-checkbox">Rubric</label>
                 <input id="rubric-checkbox" type="checkbox"/>
                 <div class="dropdown-content">
@@ -65,7 +67,7 @@
                 </div>
             </div>
             
-            <div class="dropdown">
+            <div class="dropdown"> <!-- Supplemental Documents -->
                 <label for="sd-checkbox">Supplemental Documents</label>
                 <input id="sd-checkbox" type="checkbox"/>
                 <div class="dropdown-content">
@@ -80,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown"><!-- Timeline -->
                 <label for="tl-checkbox">Timeline</label>
                 <input id="tl-checkbox" type="checkbox"/>
                 <div class="dropdown-content">
@@ -88,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown"><!-- User Persona -->
                 <label for="up-checkbox">User Persona</label>
                 <input id="up-checkbox" type="checkbox"/>
                 <div class="dropdown-content">
@@ -96,23 +98,31 @@
                 </div>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown"><!-- Wireframe -->
                 <label for="wire-checkbox">Low-Fidelity Wireframe & Testing</label>
                 <input id="wire-checkbox" type="checkbox"/>
                 <div class="dropdown-content">
                     <embed type="application/pdf" src="./ProjectInfo/wireframe.pdf">
 
                     <br>
-                    <h2>Testing Results:</h2><br>
-                    <ol>
-                        <li class="left">Feels dated, needs a more vacation themed font</li>
-                        <li class="left">Needs mobile navigation</li>
-                        <li class="left">Vertical Navigations feels excessive and looks old</li>
-                    </ol>
+                    <h2>Guerilla Testing Results:</h2><br>
+
+                    <table class="text-table">
+                        <thead>
+                            <tr><th>Feedback</th><th>Actionable?</th><th>Decision</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Sidebar feels dated and clunky on mobile</td><td>Actionable</td><td>Will remove the sidebar</td></tr>
+                            
+                            <tr><td>Prefers separate pages to page sections/dropdowns</td><td>Not Actionable</td><td>Doesn't fall within the scope of the project, too many pages</td></tr>
+                        
+                            <tr><td>Dropdown labels should be bigger</td><td>Actionable</td><td>Labels can be made larger</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown"> <!-- Objective Usability -->
                 <label for="ou-checkbox">Objective Usability Tasks</label>
                 <input id="ou-checkbox" type="checkbox"/>
                 <div class="dropdown-content">
@@ -128,29 +138,44 @@
                 </div>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown"> <!-- Sources -->
                 <label for="sources-checkbox">Sources</label>
                 <input id="sources-checkbox" type="checkbox"/>
                 <div class="dropdown-content">
                     <div class="reference">
                         <i class="fa fa-house icon"></i>
-                        Font Awesome. (n.d.). Font Awesome Icons. Retrieved from <a href="fontawesome.com">fontawesome.com</a>.
+                        Font Awesome. (n.d.). <i>Font Awesome Icons.</i> Retrieved from <a href="fontawesome.com">fontawesome.com</a>.
                     </div><br>
 
                     <div class="reference">
-                        <img alt="Chewy" src="media/chewy.png"/>
-                        Sideshow. (n.d.). Chewy Font. Google Fonts. Retrieved from <a href="https://fonts.google.com/specimen/Chewy">fonts.google.com</a>.
+                        <img alt="Chewy" src="./media/chewy.png"/>
+                        Sideshow. (n.d.). <i>Chewy Font.</i> Google Fonts. Retrieved from <a href="https://fonts.google.com/specimen/Chewy">fonts.google.com</a>.
                     </div><br>
 
                     <div class="reference">
-                        <img alt="Sarina" src="media/sarina.png"/>
-                        James Grieshaber. (n.d.). Sarina Font. Google Fonts. Retrieved from <a href="https://fonts.google.com/specimen/Sarina">fonts.google.com</a>.
+                        <img alt="Sarina" src="./media/sarina.png"/>
+                        James Grieshaber. (n.d.). <i>Sarina Font.</i> Google Fonts. Retrieved from <a href="https://fonts.google.com/specimen/Sarina">fonts.google.com</a>.
                     </div><br>
 
                     <div class="reference">
-                        <img alt="Tropical tree favicon" src="media/favicon.ico"/>
-                        PLR Paradise. (2012). Tropical. Retrieved from <a href="https://www.favicon.cc/?action=icon&file_id=421967">www.favicon.cc</a>.
+                        <img alt="Tropical tree favicon" src="./media/favicon.ico"/>
+                        PLR Paradise. (2012). <i>Tropical.</i> Retrieved from <a href="https://www.favicon.cc/?action=icon&file_id=421967">www.favicon.cc</a>.
                     </div><br>
+
+                    <div class="reference">
+                        <img alt="plumeria" src="./media/plumeria.jpg"/>
+                        Videowok_Art. (n.d.) <i>Photo of plumeria flowers.</i> Getty Images.
+                    </div><br>
+
+                    <div class="reference">
+                        <img alt="volcano" src="./media/volcano.jpg"/>
+                        GigliardiPhotography. (2016). <i>Amazing landscape of Tahiti, Polynesia.</i>
+                    </div><br>
+
+                    <div class="reference">
+                        <img alt="text" src="./media/tours.jpg"/>
+                        reference
+                    </div>
 
                 </div>
             </div>

@@ -123,14 +123,35 @@ mark {
   /* Generic Page Content */
   #page-content {
     display: block;
-    min-height: 69vh;
     margin: 0.5em;
     padding: 0.5em;
     background-color: rgba(255, 220, 154, 0.7058823529);
   }
+  .regular {
+    min-height: 69vh;
+  }
+  .long {
+    min-height: 175vh;
+  }
   /* 404 Error Page Content */
   #error-content {
-    display: none;
+    min-height: 79vh;
+    padding-top: 20vh;
+  }
+  #error-content h1 {
+    font-family: "Sarina";
+    font-size: 15vw;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 1px 1px #2C1329;
+    -webkit-text-stroke: 1px #2C1329;
+    text-align: center;
+    background-color: transparent;
   }
   /* Index Page Content */
   #index-content {
@@ -174,6 +195,9 @@ mark {
   .right {
     text-align: right;
   }
+  .justify {
+    text-align: justify;
+  }
   .dropdown {
     padding-top: 1em;
     padding-left: 0.5em;
@@ -194,13 +218,18 @@ mark {
   .dropdown input:checked ~ div {
     display: block;
   }
-  .dropdown .dropdown-content {
+  .dropdown .large {
     min-height: 60vh;
+  }
+  .dropdown .dropdown-content {
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 1em;
     border: 2px solid #2C1329;
+  }
+  .dropdown .dropdown-content ol, .dropdown .dropdown-content ul {
+    padding-left: 2em;
   }
   .text-table {
     width: 100%;
@@ -263,9 +292,6 @@ mark {
     height: 20vh;
     width: auto;
     padding-right: 0.5em;
-  }
-  .reference i {
-    font-size: 10vh;
   }
   /* Footer */
   footer {
@@ -341,14 +367,35 @@ mark {
   /* Generic Page Content */
   #page-content {
     display: block;
-    min-height: 79vh;
     margin: 0.5em;
     padding: 0.5em;
     background-color: rgba(255, 220, 154, 0.7058823529);
   }
+  .regular {
+    min-height: 79vh;
+  }
+  .long {
+    min-height: 175vh;
+  }
   /* 404 Error Page Content */
   #error-content {
-    display: none;
+    min-height: 80vh;
+    padding-top: 20vh;
+  }
+  #error-content h1 {
+    font-family: "Sarina";
+    font-size: 10vw;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 1px 1px #2C1329;
+    -webkit-text-stroke: 1px #2C1329;
+    text-align: center;
+    background-color: transparent;
   }
   /* Index Page Content */
   #index-content {
@@ -392,13 +439,18 @@ mark {
   .right {
     text-align: right;
   }
+  .justify {
+    text-align: justify;
+  }
   .dropdown {
     padding-top: 1em;
     padding-bottom: 1em;
   }
   .dropdown label {
     display: block;
+    padding: 0.25em;
     background-color: #2C1329;
+    font-size: 1.5em;
     color: #FFDB9A;
   }
   .dropdown input {
@@ -410,11 +462,16 @@ mark {
   .dropdown input:checked ~ div {
     display: block;
   }
-  .dropdown .dropdown-content {
+  .dropdown .large {
     min-height: 45vh;
+  }
+  .dropdown .dropdown-content {
     padding: 0.5em;
     border: 2px solid #2C1329;
     border-collapse: collapse;
+  }
+  .dropdown .dropdown-content ol, .dropdown .dropdown-content ul {
+    padding-left: 2em;
   }
   .text-table {
     width: 100%;
@@ -463,12 +520,24 @@ mark {
     padding: 0.25em;
   }
   .reference {
-    min-height: 30vh;
+    min-height: 23vh;
+    padding: 0.25em;
+    border: 1px solid #86615C;
+    text-align: left;
+  }
+  .reference .fa-house {
+    font-size: 6em;
+    float: left;
   }
   .reference img {
-    float: right;
+    float: left;
     height: 20vh;
-    padding: 1em;
+    width: auto;
+    padding-right: 0.5em;
+  }
+  embed {
+    width: 60em;
+    height: 70vh;
   }
   /* Footer */
   footer {

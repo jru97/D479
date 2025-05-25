@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
     <!-- Page Info -->
-    <title>Taniti || Home</title>
+    <title>Taniti || Error</title>
     <link rel="icon" href="./Components/favicon.ico"/>
     <meta name="description" content="WGU D479 User Experience Design Task 1 by Jack Underwood (005733342)"/>
     <meta name="subject" content="WGU D479 Task 1"/>
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./main.css"/>
+    <link rel="stylesheet" href="./stylesheet.css"/>
     <!-- Index Page --><link rel="stylesheet" href="./index.css"/>
     <!-- Icons --><script src="https://kit.fontawesome.com/5fc5f741e7.js" crossorigin="anonymous"></script>
     <!-- Title Font --><link href="https://fonts.googleapis.com/css2?family=Festive&family=Sarina&display=swap" rel="stylesheet">
@@ -25,33 +25,32 @@
 
 <body>
     <!-- HEADER -->
-    <div class="header">
-        <button id="home-button"><a href="www.google.com"><i class="fa fa-house icon"></i></a></button>
-        <button id="nav-button" onclick="dropdown()">&#9776;</button>
+    <header>
         <div id="title">Taniti</div>
+
+        <button id="home-button"><a href="./index.html"><i class="fa fa-house icon"></i></a></button>
         
-        <div id="nav" class="nav-content">
-            <div id="navtitle">Taniti </div>
-            <a id="home" href="./index.html">Home</a>
-            <a id="necessities" href="./necessities.html">Food & Lodging</a>
-            <a id="entertainment" href="./entertainment.html">Entertainment</a>
-            <a id="sightseeing" href="./sightseeing.html">Sightseeing</a>
-            <a id="transportation" href="./transportation.html">Transportation</a>
-            <a id="faq" href="./faq.html">FAQs</a>
-            <a id="projectinfo" href="./projectinfo.html">Project Info</a>
+        <div id="navigation-dropdown">
+            <label id="nav-button" for="navigation-checkbox">&#9776;</label>
+            <input id="navigation-checkbox" type="checkbox"/>
+            <div id="navigation-content">
+                <div id="nav-title">Taniti</div>
+                <a id="nav-home" href="./index.html">Home</a>
+                <a id="nav-necessities" href="./necessities.html">Food & Lodging</a>
+                <a id="nav-entertainment" href="./entertainment.html">Entertainment</a>
+                <a id="nav-sightseeing" href="./sightseeing.html">Sightseeing</a>
+                <a id="nav-transportation" href="./transportation.html">Transportation</a>
+                <a id="nav-faq" href="./faq.html">FAQs</a>
+                <a id="nav-info" href="./projectinfo.html">Info</a>
+            </div>
         </div>
+
         
-        <div class="subtitle">Home</div>
-    </div>
+    </header>
 
     <!-- BODY BLOCK -->
-    <div class="bodyblock">
-    <div class="aside"></div>
-
-    <div id="space">.</div>
-        <div class="body">
-            <h1>404 Error</h1>
-        </div>
+    <div id="error-content">
+        <h1>404 Error</h1>
     </div>
 
     <!-- FOOTER -->
