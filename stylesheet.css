@@ -202,7 +202,9 @@
   }
   .dropdown label {
     display: block;
+    padding: 0.25em;
     background-color: #2C1329;
+    font-size: 1.5em;
     color: #FFDB9A;
   }
   .dropdown input {
